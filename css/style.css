@@ -7,10 +7,23 @@
 
 * {
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
     margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul {
+    color: var(--orange);
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
 }
 
 a {
@@ -25,4 +38,10 @@ ul {
 footer {
     color: #FFFFFF;
     background-color: var(--blue);
+}
+
+.footer-top-wrapper,
+.footer-bottom-wrapper {
+    display: flex;
+    justify-content: space-around;
 }
