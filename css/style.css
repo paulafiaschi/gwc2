@@ -10,6 +10,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html,
+body {
+    min-height: 100vw;
+}
+
 body {
     margin: 0;
 }
@@ -38,6 +43,13 @@ ul {
 footer {
     color: #FFFFFF;
     background-color: var(--blue);
+}
+
+
+/* This is for accesibilty - some screen readers read all caps letter-by-letter */
+
+.caps {
+    text-transform: uppercase;
 }
 
 .footer-top-wrapper,
