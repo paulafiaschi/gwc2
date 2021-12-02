@@ -2,9 +2,27 @@
     --orange: #FE6F2E;
     --green: #77D970;
     --lightgreen: #F0FCEA;
-    --darkblue: #00253E;
+    --blue: #00253E;
 }
 
 * {
     box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+footer {
+    color: #FFFFFF;
+    background-color: var(--blue);
 }
