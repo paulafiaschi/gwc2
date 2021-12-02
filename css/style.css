@@ -40,6 +40,15 @@ ul {
     list-style: none;
 }
 
+h3 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
 footer {
     color: #FFFFFF;
     background-color: var(--blue);
@@ -62,11 +71,35 @@ button.solid {
     display: inline-block;
 }
 
+section.info {
+    color: var(--green);
+    border: solid 2px var(--green);
+    width: 40rem;
+    margin: 0 auto 0 auto;
+    padding: 2rem 6rem 2rem 6rem;
+}
+
+.info>h3 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.info>p {
+    color: black;
+    line-height: 2rem;
+    ;
+}
+
 
 /* This is for accesibilty - some screen readers read all caps letter-by-letter */
 
 .caps {
     text-transform: uppercase;
+}
+
+.selection-gallery-wrapper {
+    background-color: var(--orange);
+    height: 300px;
 }
 
 .footer-top-wrapper,
