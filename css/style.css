@@ -1,0 +1,10 @@
+:root {
+    --orange: #FE6F2E;
+    --green: #77D970;
+    --lightgreen: #F0FCEA;
+    --darkblue: #00253E;
+}
+
+* {
+    box-sizing: border-box;
+}
