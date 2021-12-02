@@ -45,6 +45,23 @@ footer {
     background-color: var(--blue);
 }
 
+button.outline {
+    color: var(--green);
+    background-color: transparent;
+    border: solid 2px var(--green);
+    padding: 15px 32px;
+}
+
+button.solid {
+    border: solid 2px var(--green);
+    color: white;
+    background-color: var(--green);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
 
 /* This is for accesibilty - some screen readers read all caps letter-by-letter */
 
