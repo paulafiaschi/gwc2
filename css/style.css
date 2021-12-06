@@ -71,7 +71,7 @@ button.solid {
     display: inline-block;
 }
 
-section.info {
+article.info {
     color: var(--green);
     border: solid 2px var(--green);
     width: 40rem;
@@ -87,7 +87,6 @@ section.info {
 .info>p {
     color: black;
     line-height: 2rem;
-    ;
 }
 
 
