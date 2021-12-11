@@ -133,8 +133,41 @@ article.info {
     height: 300px;
 }
 
+.faq-group {
+    display: flex;
+    gap: 1rem;
+    margin: auto 8% auto 8%;
+    padding: 2rem;
+}
+
+.faq-block {
+    border: solid 1px var(--darkteal);
+    padding: .5rem;
+}
+
+.faq-block>figure>* {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.faq-block>figure {
+    text-align: center;
+    color: var(--darkteal);
+}
+
+.faq-block>figure>img {
+    max-height: 100px;
+    width: auto;
+    color: var(--darkteal);
+}
+
 .footer-top-wrapper,
 .footer-bottom-wrapper {
     display: flex;
     justify-content: space-around;
+}
+
+.SoMe-icons>a>img {
+    max-height: 30px;
+    height: auto;
 }
