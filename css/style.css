@@ -99,7 +99,7 @@ article.info {
 }
 
 .info>p {
-    color: black;
+    color: var(--darkteal);
     line-height: 2rem;
 }
 
