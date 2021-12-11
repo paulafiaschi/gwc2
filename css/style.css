@@ -45,6 +45,7 @@ ul {
 h3 {
     text-align: center;
     font-size: 2.5rem;
+    color: var(--darkteal)
 }
 
 section {
@@ -52,8 +53,19 @@ section {
 }
 
 footer {
-    color: #FFFFFF;
-    background-color: var(--blue);
+    color: var(--darkteal);
+    background-color: var(--lightgrey);
+}
+
+.hero {
+    background-color: var(--darkteal);
+    /* get rid of this later */
+    height: 500px;
+}
+
+.hero>h2 {
+    color: white;
+    font-size: 3rem;
 }
 
 button.outline {
@@ -64,7 +76,7 @@ button.outline {
 }
 
 button.solid {
-    border: solid 2px white;
+    border: solid 2px var(--darkteal);
     color: white;
     background-color: var(--darkteal);
     padding: 15px 32px;
@@ -74,8 +86,8 @@ button.solid {
 }
 
 article.info {
-    color: var(--green);
-    border: solid 2px var(--green);
+    color: var(--darkteal);
+    border: solid 2px var(--darkteal);
     width: 40rem;
     margin: 0 auto 0 auto;
     padding: 2rem 6rem 2rem 6rem;
@@ -92,14 +104,14 @@ article.info {
 }
 
 
-/* This is for accesibilty - some screen readers read all caps letter-by-letter */
+/* This .caps is for accesibilty - some screen readers read all caps letter-by-letter */
 
 .caps {
     text-transform: uppercase;
 }
 
 .selection-gallery-wrapper {
-    background-color: var(--orange);
+    background-color: var(--darkteal);
     height: 300px;
 }
 
