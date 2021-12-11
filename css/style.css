@@ -7,6 +7,9 @@
     --darkteal: #02232A;
 }
 
+
+/* remember to consolidate all text etc that should be same color */
+
 * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
@@ -161,8 +164,13 @@ article.info {
     color: var(--darkteal);
 }
 
-.footer-top-wrapper,
-.footer-bottom-wrapper {
+.footer-logo>a>img {
+    max-width: 150px;
+    height: auto;
+    padding-top: 2rem;
+}
+
+.footer-wrapper {
     display: flex;
     justify-content: space-around;
 }
