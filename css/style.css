@@ -216,7 +216,8 @@ article.info {
 /* product list view */
 #cat-list {
   display: grid;
-  grid-gap: 2.5rem;
+  column-gap: 2.5rem;
+  row-gap: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 #cat-list h1 {
@@ -228,10 +229,48 @@ article.info {
   width: 100%;
 }
 
-aside {
-}
-
-.filters a {
+.filters a,
+.filters-top li {
   display: flex;
   align-items: center;
+}
+
+.filters-top ul {
+  display: flex;
+  justify-content: center;
+}
+
+.filters-top li {
+  margin: 0 1.5rem;
+  cursor: pointer;
+}
+
+.filters-top {
+  grid-column: 1/-1;
+  margin-bottom: 0rem;
+}
+
+.brand-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 8rem;
+  z-index: 1;
+  top: 2.5rem;
+  left: 0;
+}
+
+.brand-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.brand-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .brand-content {
+  display: block;
 }
