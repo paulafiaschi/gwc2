@@ -19,7 +19,8 @@
         <nav>
             <ul>
                 <li>
-                    <a href="product_list.html"> Browse clothes</a></li>
+                    <a href="product_list.html"> Browse clothes</a>
+                </li>
                 <li>
                     <a href="#">List clothes</a>
                 </li>
@@ -32,7 +33,22 @@
             </ul>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <h1 class="category-header"></h1>
+        <template id="categoryList_template">
+            <section class="item">
+                <a href="product_view.html"><img src="#" alt="a" />
+                    <h3>Item title</h3>
+                </a>
+                <p class="price">300dkk</p>
+            </section>
+        </template>
+
+
+    </main>
+
+
+
     <footer>
         <div class="footer-wrapper">
             <div class="footer-logo">
@@ -61,12 +77,17 @@
                     <li class="bold-caps">FAQ</li>
                 </ul>
                 <div class="SoMe-icons">
-                    <a href="https://www.instagram.com/green_wardrobe_club"><img src="./assets/SVG/insta_iconteal.svg" alt="instagram"></a>
-                    <a href="https://www.facebook.com/Green-Wardrobe-Club-125682786349267"><img src="./assets/SVG/fb_iconteal.svg" alt="facebook"></a>
+                    <a href="https://www.instagram.com/green_wardrobe_club"><img src="./assets/SVG/insta_iconteal.svg"
+                            alt="instagram"></a>
+                    <a href="https://www.facebook.com/Green-Wardrobe-Club-125682786349267"><img
+                            src="./assets/SVG/fb_iconteal.svg" alt="facebook"></a>
                     <a href="#"><img src="./assets/SVG/tiktok_iconteal.svg" alt="TikTok"></a>
                 </div>
             </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

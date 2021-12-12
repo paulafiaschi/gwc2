@@ -3,7 +3,7 @@ const category = urlParams.get("Category");
 console.log(category);
 
 // This is the end point filtered by category / The sintax is defined by restdb
-const url = `https://cocktails-240e.restdb.io/rest/gw-club?q={"Category" : {"$in" : ["${catgory}"]}}`;
+const url = `https://cocktails-240e.restdb.io/rest/gw-club?q={"Category" : {"$in" : ["${category}"]}}`;
 console.log(url);
 
 // The API key
@@ -40,22 +40,23 @@ function showItem(item) {
   console.log(item);
 
   // create templates
-  const template = document.querySelector("#recipelist_template").content;
+  const template = document.querySelector("#categoryList_template").content;
 
   // clone the template
   const copy = template.cloneNode(true);
 
-  // make the product page match the recipe we are gonna click
+  // make the product page match the item we are gonna click
   copy
     .querySelector("a")
-    .setAttribute("href", "productpage.html?cocktail=" + recipe.Name);
-  // console.log(recipe.Name);
+    .setAttribute("href", "product_view.html?id=" + item._id);
+  console.log(item._id);
 
   // change dinamic data
-  document.querySelector(".spirit-header").textContent = spirit;
-  copy.querySelector("h3").textContent = recipe.Name;
-  copy.querySelector("img").setAttribute("src", recipe.img);
-  copy.querySelector("img").setAttribute("alt", recipe.Name + "picture");
+  document.querySelector(".category-header").textContent = category;
+  copy.querySelector("h3").textContent = item.Title;
+  copy.querySelector("img").setAttribute("src", item.Image);
+  copy.querySelector("img").setAttribute("alt", item.Title + "picture");
+  copy.querySelector("p").textContent = item.Price + " dkk";
 
   // append it to main
   const elemParent = document.querySelector("main");
