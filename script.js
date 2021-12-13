@@ -2,6 +2,9 @@ const urlParams = new URLSearchParams(window.location.search);
 const category = urlParams.get("Category");
 console.log(category);
 
+window.addEventListener("load", start);
+let checked = document.querySelector(".filter_" + category);
+
 // This is the end point filtered by category / The sintax is defined by restdb
 const url = `https://cocktails-240e.restdb.io/rest/gw-club?q={"Category" : {"$in" : ["${category}"]}}`;
 console.log(url);
@@ -61,4 +64,14 @@ function showItem(item) {
   // append it to main
   const elemParent = document.querySelector("main");
   elemParent.appendChild(copy);
+}
+
+function start() {
+  checked.innerHTML = "check_box";
+  document.querySelector(".check-filter").addEventListener("click", checkBox);
+}
+
+function checkBox() {
+  console.log("filter checked");
+  document.querySelector(".check-box").innerHTML = "check_box";
 }
