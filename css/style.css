@@ -278,3 +278,37 @@ article.info {
 .none {
   display: none;
 }
+
+.title-h3 {
+  font-size: 0.75rem;
+  font-weight: 300;
+  text-align: left;
+  margin-top: 0;
+}
+
+.first-line {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.first-line h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.price {
+  margin: 0.3rem;
+}
+
+.image {
+  position: relative;
+}
+
+.heart {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 3;
+}
