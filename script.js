@@ -60,6 +60,7 @@ function showItem(item) {
   copy.querySelector("img").setAttribute("src", item.Image);
   copy.querySelector("img").setAttribute("alt", item.Title + "picture");
   copy.querySelector("p").textContent = item.Price + " dkk";
+  copy.querySelector("h2").textContent = item.Brand;
 
   // append it to main
   const elemParent = document.querySelector("main");
