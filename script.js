@@ -69,9 +69,32 @@ function showItem(item) {
 function start() {
   checked.innerHTML = "check_box";
   document.querySelector(".check-filter").addEventListener("click", checkBox);
+  document.querySelector("#brand-filter").addEventListener("click", showFilter);
 }
 
 function checkBox() {
   console.log("filter checked");
   document.querySelector(".check-box").innerHTML = "check_box";
+}
+
+function showFilter() {
+  document.querySelector(".brand-content").classList.remove("none");
+  document.querySelector(".brand-content").classList.add("block");
+  console.log("open filter");
+  document
+    .querySelector("#brand-filter")
+    .removeEventListener("click", showFilter);
+  document
+    .querySelector("#brand-filter")
+    .addEventListener("click", closeFilter);
+}
+
+function closeFilter() {
+  document.querySelector(".brand-content").classList.remove("block");
+  document.querySelector(".brand-content").classList.add("none");
+  console.log("close filter");
+  document
+    .querySelector("#brand-filter")
+    .removeEventListener("click", closeFilter);
+  document.querySelector("#brand-filter").addEventListener("click", showFilter);
 }

@@ -267,10 +267,9 @@ article.info {
   display: block;
 }
 
-.brand-content a:hover {
-  background-color: #f1f1f1;
-}
-
-.dropdown:hover .brand-content {
+.block {
   display: block;
+}
+.none {
+  display: none;
 }
