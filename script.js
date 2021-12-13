@@ -87,6 +87,7 @@ function showFilter() {
   document
     .querySelector("#brand-filter")
     .addEventListener("click", closeFilter);
+  document.querySelector(".brand-arrow").innerHTML = "expand_less";
 }
 
 function closeFilter() {
@@ -97,4 +98,5 @@ function closeFilter() {
     .querySelector("#brand-filter")
     .removeEventListener("click", closeFilter);
   document.querySelector("#brand-filter").addEventListener("click", showFilter);
+  document.querySelector(".brand-arrow").innerHTML = "expand_more";
 }
