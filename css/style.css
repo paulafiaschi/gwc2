@@ -219,6 +219,7 @@ article.info {
   column-gap: 2.5rem;
   row-gap: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin: 0 2.5rem;
 }
 #cat-list h1 {
   grid-column: 1/-1;
@@ -227,6 +228,10 @@ article.info {
 
 #cat-list img {
   width: 100%;
+}
+
+#left-filters {
+  grid-row: 3 / span 12;
 }
 
 .filters a,
