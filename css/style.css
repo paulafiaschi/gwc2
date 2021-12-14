@@ -320,6 +320,11 @@ article.info {
   margin: 3rem 0 2rem 2rem;
 }
 
+.product-view {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .sizes {
   display: flex;
 }
@@ -330,6 +335,7 @@ article.info {
   padding: 0.3rem;
   text-align: center;
   margin: 0 0.5rem;
+  cursor: pointer;
 }
 
 .sizes p {
@@ -341,6 +347,53 @@ article.info {
   color: var(--lightgrey);
 }
 
+.pick-up {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  border: solid 1px var(--darkteal);
+  width: fit-content;
+  padding: 0.3rem;
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+
+.pick-up p {
+  margin: 0;
+}
+
+.pick-up span {
+  margin-left: 2rem;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 0.75rem;
+}
+.add-bag {
+  color: var(--green);
+  border: solid 1px var(--green);
+  padding: 0.5rem 1rem;
+  width: fit-content;
+  margin: 0 !important;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: unset;
+}
+
+.fav {
+  border: solid 1px var(--darkteal);
+  padding: 0.2rem 0.5rem;
+  margin-left: 1rem;
+  line-height: inherit;
+  cursor: pointer;
+}
+
+.descrip {
+  width: 80%;
+  margin-top: 3rem;
+}
 /* mobile list */
 @media (max-width: 850px) {
   .check-box {
