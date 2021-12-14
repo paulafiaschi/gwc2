@@ -313,6 +313,34 @@ article.info {
   z-index: 3;
 }
 
+/* product page */
+.breadcrumbs {
+  display: flex;
+  align-content: center;
+  margin: 3rem 0 2rem 2rem;
+}
+
+.sizes {
+  display: flex;
+}
+
+.sizes div {
+  border: solid 1px var(--darkteal);
+  width: 2rem;
+  padding: 0.3rem;
+  text-align: center;
+  margin: 0 0.5rem;
+}
+
+.sizes p {
+  margin: 0;
+}
+
+.no-stock {
+  border: solid 1px var(--lightgrey) !important;
+  color: var(--lightgrey);
+}
+
 /* mobile list */
 @media (max-width: 850px) {
   .check-box {
