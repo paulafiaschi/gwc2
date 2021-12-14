@@ -324,7 +324,7 @@ article.info {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 3rem;
-  margin: 3rem;
+  margin: 1rem 10rem;
 }
 
 .product-view img {
@@ -419,6 +419,38 @@ article.info {
 .descrip {
   width: 80%;
   margin-top: 3rem;
+}
+
+#also-like {
+  position: relative;
+  margin-top: 5rem;
+}
+
+.might-like {
+  font-size: 2rem;
+  font-family: "Lora", serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.black-bg {
+  width: 100%;
+  height: 20rem;
+  background-color: black;
+  position: absolute;
+  z-index: -1;
+  top: -4rem;
+}
+
+#also-like img {
+  max-width: 250px;
+}
+
+.related-img {
+  display: flex;
+  grid-gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 /* mobile list */
 @media (max-width: 850px) {

@@ -39,6 +39,8 @@ function getProductPage(garment) {
 function showItem(item) {
   console.log(item);
 
+  const item2 = item._id + 1;
+  console.log(item2);
   // create templates
   const template = document.querySelector("#product_template").content;
 
@@ -51,7 +53,6 @@ function showItem(item) {
     .querySelector("#category-bc")
     .setAttribute("href", "product_list.html?Category=" + item.Category);
   document.querySelector("#item-bc").textContent = item.Title;
-  ß;
   copy.querySelector(".prod-brand").textContent = item.Brand;
   copy.querySelector(".prod-title").textContent = item.Title;
   copy.querySelector(".prod-price").textContent = "DKK " + item.Price;

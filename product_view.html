@@ -9,6 +9,9 @@
     <title>Product detail</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <script src="script.js" defer></script>
 
@@ -56,57 +59,70 @@
         </nav>
 
         <template id="product_template">
-            <div class="product-view">
-                <img src="/assets/ganni-dress.webp" alt="" class="product-img">
-                <div class="product-info">
-                    <h3 class="prod-brand">GANNI</h3>
-                    <h5 class="prod-title">Metallisk jacquard kjole</h5>
-                    <h4 class="prod-price">DKK 499</h4>
-                    <h5>AVAILABLE SIZES</h5>
-                    <div class="sizes">
-                        <div id="xs" class="no-stock">
-                            <p>XS</p>
+            <section>
+                <div class="product-view">
+                    <img src="/assets/ganni-dress.webp" alt="" class="product-img">
+                    <div class="product-info">
+                        <h3 class="prod-brand">GANNI</h3>
+                        <h5 class="prod-title">Metallisk jacquard kjole</h5>
+                        <h4 class="prod-price">DKK 499</h4>
+                        <h5>AVAILABLE SIZES</h5>
+                        <div class="sizes">
+                            <div id="xs" class="no-stock">
+                                <p>XS</p>
+                            </div>
+                            <div id="s" class="no-stock">
+                                <p>S</p>
+                            </div>
+                            <div id="m" class="no-stock">
+                                <p>M</p>
+                            </div>
+                            <div id="l" class="no-stock">
+                                <p>L</p>
+                            </div>
+                            <div id="xl" class="no-stock">
+                                <p>XL</p>
+                            </div>
                         </div>
-                        <div id="s" class="no-stock">
-                            <p>S</p>
+                        <div class="pick-up">
+                            <p>PICKUP POINT</p> <span class="material-icons-outlined">
+                                arrow_drop_down
+                            </span>
                         </div>
-                        <div id="m" class="no-stock">
-                            <p>M</p>
+                        <div class="buttons">
+                            <button class="add-bag">Add to bag</button>
+                            <span class="material-icons-outlined fav">
+                                favorite_border
+                            </span>
                         </div>
-                        <div id="l" class="no-stock">
-                            <p>L</p>
+                        <div class="descrip">
+                            <h5>Product description</h5>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
+                                est
+                                quas
+                                porro soluta et dolorum suscipit. Accusantium aperiam excepturi temporibus laudantium.
+                                Deleniti
+                                nihil perferendis eligendi velit neque illo beatae cupiditate.</p>
                         </div>
-                        <div id="xl" class="no-stock">
-                            <p>XL</p>
-                        </div>
-                    </div>
-                    <div class="pick-up">
-                        <p>PICKUP POINT</p> <span class="material-icons-outlined">
-                            arrow_drop_down
-                        </span>
-                    </div>
-                    <div class="buttons">
-                        <button class="add-bag">Add to bag</button>
-                        <span class="material-icons-outlined fav">
-                            favorite_border
-                        </span>
-                    </div>
-                    <div class="descrip">
-                        <h5>Product description</h5>
-                        <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis est
-                            quas
-                            porro soluta et dolorum suscipit. Accusantium aperiam excepturi temporibus laudantium.
-                            Deleniti
-                            nihil perferendis eligendi velit neque illo beatae cupiditate.</p>
                     </div>
                 </div>
-            </div>
+            </section>
         </template>
 
-        </div>
-
-
     </main>
+
+    <h5 class="might-like">You might also like</h5>
+    <section id="also-like">
+        <div class="black-bg"></div>
+        <div class="related-img">
+            <img src="/assets/maxikjole-hvid2.png" alt="" id="also-like-1">
+            <img src="/assets/SHINY-JACQUARD3.png" alt="" id="also-like-3">
+            <img src="/assets/METALISK-JACQUARD1.png" alt="" id="also-like-2">
+        </div>
+    </section>
+
+
+
 
 
 
