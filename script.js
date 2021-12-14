@@ -32,7 +32,7 @@ fetch(url, options)
     console.error("An error occured:", e.message);
   });
 
-//Code for categor (ie. dresses) list
+//Code for category (ie. dresses) list
 
 //loop
 function getProductList(garment) {
