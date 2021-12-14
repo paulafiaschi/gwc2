@@ -322,14 +322,14 @@ article.info {
 
 .product-view {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-template-columns: 1fr 1fr;
   grid-gap: 3rem;
   margin: 1rem 10rem;
   justify-content: center;
 }
 
 .product-view img {
-  width: 60%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -401,8 +401,8 @@ article.info {
   margin-top: 0.75rem;
 }
 .add-bag {
-  color: var(--darkteal);
-  border: solid 2px var(--darkteal);
+  color: var(--green);
+  border: solid 2px var(--green);
   font-weight: 700;
   padding: 0.75rem 2rem;
   width: fit-content;
@@ -415,10 +415,11 @@ article.info {
 
 .fav {
   border: solid 1px var(--darkteal);
-  padding: 0.2rem 0.5rem;
+  padding: 0.75rem;
   margin-left: 1rem;
   line-height: inherit;
   cursor: pointer;
+  align-self: center;
 }
 
 .descrip {
@@ -504,7 +505,16 @@ article.info {
     font-size: 1rem;
   }
 
-  #product_view {
-    display: block;
+  .product-view {
+    margin: 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .descrip {
+    width: 100%;
+  }
+
+  .prod-price {
+    font-size: 1.5rem;
   }
 }
