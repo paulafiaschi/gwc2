@@ -47,7 +47,11 @@ function showItem(item) {
 
   // change dinamic data
   document.querySelector("#category-bc").textContent = item.Category;
+  document
+    .querySelector("#category-bc")
+    .setAttribute("href", "product_list.html?Category=" + item.Category);
   document.querySelector("#item-bc").textContent = item.Title;
+  ß;
   copy.querySelector(".prod-brand").textContent = item.Brand;
   copy.querySelector(".prod-title").textContent = item.Title;
   copy.querySelector(".prod-price").textContent = "DKK " + item.Price;

@@ -323,6 +323,12 @@ article.info {
 .product-view {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+  margin: 3rem;
+}
+
+.product-view img {
+  width: 100%;
 }
 
 .product-view h5 {
@@ -364,6 +370,7 @@ article.info {
 .no-stock {
   border: solid 1px var(--lightgrey) !important;
   color: var(--lightgrey);
+  cursor: default !important;
 }
 
 .pick-up {
