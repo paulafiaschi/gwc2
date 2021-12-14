@@ -55,53 +55,53 @@
             <a href="" id="item-bc">item</a>
         </nav>
 
-        <div class="product-view">
-            <img src="/assets/ganni-dress.webp" alt="" class="product-img">
-            <div class="product-info">
-                <h3 class="prod-brand">GANNI</h3>
-                <h5 class="prod-title">Metallisk jacquard kjole</h5>
-                <h4 class="prod-price">DKK 499</h4>
-                <h5>AVAILABLE SIZES</h5>
-                <div class="sizes">
-                    <div id="xs">
-                        <p>XS</p>
+        <template id="product_template">
+            <div class="product-view">
+                <img src="/assets/ganni-dress.webp" alt="" class="product-img">
+                <div class="product-info">
+                    <h3 class="prod-brand">GANNI</h3>
+                    <h5 class="prod-title">Metallisk jacquard kjole</h5>
+                    <h4 class="prod-price">DKK 499</h4>
+                    <h5>AVAILABLE SIZES</h5>
+                    <div class="sizes">
+                        <div id="xs" class="no-stock">
+                            <p>XS</p>
+                        </div>
+                        <div id="s" class="no-stock">
+                            <p>S</p>
+                        </div>
+                        <div id="m" class="no-stock">
+                            <p>M</p>
+                        </div>
+                        <div id="l" class="no-stock">
+                            <p>L</p>
+                        </div>
+                        <div id="xl" class="no-stock">
+                            <p>XL</p>
+                        </div>
                     </div>
-                    <div id="s">
-                        <p>S</p>
+                    <div class="pick-up">
+                        <p>PICKUP POINT</p> <span class="material-icons-outlined">
+                            arrow_drop_down
+                        </span>
                     </div>
-                    <div id="m">
-                        <p>M</p>
+                    <div class="buttons">
+                        <button class="add-bag">Add to bag</button>
+                        <span class="material-icons-outlined fav">
+                            favorite_border
+                        </span>
                     </div>
-                    <div id="l">
-                        <p>L</p>
+                    <div class="descrip">
+                        <h5>Product description</h5>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis est
+                            quas
+                            porro soluta et dolorum suscipit. Accusantium aperiam excepturi temporibus laudantium.
+                            Deleniti
+                            nihil perferendis eligendi velit neque illo beatae cupiditate.</p>
                     </div>
-                    <div id="xl">
-                        <p>XL</p>
-                    </div>
-                </div>
-
-                <div class="pick-up">
-                    <p>PICKUP POINT</p> <span class="material-icons-outlined">
-                        arrow_drop_down
-                    </span>
-                </div>
-
-                <div class="buttons">
-                    <button class="add-bag">Add to bag</button>
-                    <span class="material-icons-outlined fav">
-                        favorite_border
-                    </span>
-                </div>
-
-                <div class="descrip">
-                    <h5>Product description</h5>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis est quas
-                        porro soluta et dolorum suscipit. Accusantium aperiam excepturi temporibus laudantium. Deleniti
-                        nihil perferendis eligendi velit neque illo beatae cupiditate.</p>
                 </div>
             </div>
-
-        </div>
+        </template>
 
         </div>
 
@@ -147,6 +147,8 @@
             </div>
     </footer>
 
+
+    <script src="product.js"></script>
 </body>
 
 </html>
