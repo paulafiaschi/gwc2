@@ -355,13 +355,18 @@ article.info {
 .tabs-wrapper {
     width: 98%;
     display: flex;
-    margin-top: 14rem;
+    margin-top: 8rem;
 }
 
 .tabs-wrapper>h3 {
     font-size: 1.8rem;
     width: 100%;
     /* margin: 0 auto 0 auto; */
+}
+
+.active-tab,
+.inactive-tab {
+    cursor: pointer
 }
 
 .active-tab {
@@ -372,6 +377,12 @@ article.info {
     color: var(--lightgrey);
     background-color: rgba(6, 9, 9, 0.114);
     border-radius: 10px 10px 0 0;
+}
+
+.inactive-tab:hover {
+    transform: scale(1.01, 1.05);
+    transition: all 1s;
+    color: var(--darkteal);
 }
 
 .inactive-steps {
@@ -471,6 +482,7 @@ div.img-container {
 .blurb {
     display: flex;
     flex-direction: column;
+    align-self: center;
     max-width: 25vw;
     margin: 0;
 }
