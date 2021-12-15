@@ -86,6 +86,9 @@ section {
 footer {
     color: var(--darkteal);
     background-color: var(--lightgrey);
+    margin-top: 12rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
 }
 
 h1,
@@ -135,6 +138,8 @@ button.outline {
 }
 
 button.dark-outline {
+    font-size: 1.2rem;
+    font-weight: 800;
     color: #000000;
     background-color: transparent;
     border: solid 2px #000000;
@@ -360,8 +365,10 @@ article.info {
 }
 
 .tabs-wrapper>h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    font-weight: 600;
     width: 100%;
+    padding: .2rem 0 .2rem 0;
     /* margin: 0 auto 0 auto; */
 }
 
@@ -375,15 +382,17 @@ article.info {
 }
 
 .inactive-tab {
-    color: var(--lightgrey);
+    /* color: var(--lightgrey); */
+    color: grey;
     background-color: rgba(6, 9, 9, 0.114);
     border-radius: 10px 10px 0 0;
 }
 
 .inactive-tab:hover {
     transform: scale(1.01, 1.05);
-    transition: all 1s;
+    transition: all .3s;
     color: var(--darkteal);
+    /* color: #ffffff; */
 }
 
 .inactive-steps {
