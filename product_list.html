@@ -69,10 +69,10 @@
         </section>
         <aside id="left-filters">
             <ul class="filters">
-                <li class="check-filter"><a href="product_list.html?Category=Dresses"><span
+                <li class="check-filter active"><a href="product_list.html?Category=Dresses"><span
                             class="check-box material-icons-outlined filter_Dresses">
                             check_box_outline_blank
-                        </span><span class=""> Dresses</span></a></li>
+                        </span> Dresses</a></li>
                 <li class="check-filter"><a href="product_list.html?Category=Skirts"><span
                             class="check-box material-icons-outlined filter_Skirts">
                             check_box_outline_blank
@@ -93,10 +93,19 @@
 
         <template id="categoryList_template">
             <section class="item">
-                <a href="product_view.html"><img src="#" alt="a" />
-                    <h3>Item title</h3>
+                <a href="product_view.html">
+
+                    <div class="image">
+                        <img src="#" alt="a" />
+                        <div class="heart"><span class="material-icons-outlined">favorite_border</span></div>
+                    </div>
+
+                    <div class="first-line">
+                        <h2>Ganni</h2>
+                        <p class="price">300dkk</p>
+                    </div>
+                    <h3 class="title-h3">Item title</h3>
                 </a>
-                <p class="price">300dkk</p>
             </section>
         </template>
 
