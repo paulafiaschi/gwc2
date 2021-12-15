@@ -3,6 +3,11 @@
     src: url("../assets/fonts/didot-bold.ttf")
 }
 
+@font-face {
+    font-family: "assistant";
+    src: url("../assets/fonts/Assistant-VariableFont_wght.ttf");
+}
+
 :root {
     --orange: #fe6f2e;
     --green: #77d970;
@@ -11,6 +16,7 @@
     --lightgrey: #f5f5f5;
     --darkteal: #02232a;
     --number-font: "didot";
+    --primary-font: "assistant", "roboto", "arial", "sans-serif";
 }
 
 
@@ -73,6 +79,16 @@ section {
 footer {
     color: var(--darkteal);
     background-color: var(--lightgrey);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: var(--primary-font);
 }
 
 .logo {
@@ -309,21 +325,21 @@ article.info {
 .step-wrapper {
     display: flex;
     justify-content: space-between;
-    margin: 2rem 15% 2rem 15%;
+    margin: 12rem 12% 12rem 12%;
 }
 
 .large-number {
     font-family: var(--number-font);
-    font-size: 12rem;
-    position: relative;
-    right: 12%;
+    font-size: 13rem;
+    position: absolute;
+    left: 35%;
     mix-blend-mode: overlay;
     z-index: 1;
 }
 
 div.img-container {
     height: 280px;
-    width: 390px;
+    min-width: 380px;
     background-size: cover;
     background-position: center;
 }
@@ -365,7 +381,19 @@ div.img-container {
 .blurb {
     display: flex;
     flex-direction: column;
-    max-width: 20rem;
+    max-width: 35%;
+    margin: auto 0 auto 0;
+}
+
+.blurb>h2 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.blurb>p {
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+    font-weight: 300;
 }
 
 
