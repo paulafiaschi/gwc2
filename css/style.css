@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "didot";
+    src: url("../assets/fonts/didot-bold.ttf")
+}
+
 :root {
     --orange: #fe6f2e;
     --green: #77d970;
@@ -5,6 +10,7 @@
     --blue: #00253e;
     --lightgrey: #f5f5f5;
     --darkteal: #02232a;
+    --number-font: "didot";
 }
 
 
@@ -295,45 +301,71 @@ article.info {
 
 /* styling for how-to page starts here */
 
-.step-wrapper {
+.tabs-wrapper {
     display: flex;
+    justify-content: space-evenly;
 }
 
-.img-container {
-    height: 100%;
-    width: auto;
+.step-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 15% 2rem 15%;
+}
+
+.large-number {
+    font-family: var(--number-font);
+    font-size: 12rem;
+    position: relative;
+    right: 12%;
+    mix-blend-mode: overlay;
+    z-index: 1;
+}
+
+div.img-container {
+    height: 280px;
+    width: 390px;
+    background-size: cover;
+    background-position: center;
 }
 
 #img1 {
-    background-image: url("../assets/");
+    background-image: url("../assets/img1.jpg");
 }
 
 #img2 {
-    background-image: url("../assets/");
+    background-image: url("../assets/img2.jpg");
+    background-position: bottom;
 }
 
 #img3 {
-    background-image: url("../assets/");
+    background-image: url("../assets/img3and7.jpg");
 }
 
 #img4 {
-    background-image: url("../assets/");
+    background-image: url("../assets/img4and5.jpg");
 }
 
 #img5 {
-    background-image: url("../assets/");
+    background-image: url("../assets/img4and5.jpg");
 }
 
 #img6 {
-    background-image: url("../assets/");
+    background-image: url("../assets/img6.jpg");
+    background-position: bottom;
 }
 
 #img7 {
-    background-image: url("../assets/");
+    background-image: url("../assets/img3and7.jpg");
 }
 
 #img8 {
-    background-image: url("../assets/");
+    background-image: url("../assets/img8.jpg");
+}
+
+.blurb {
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
 }
 
 
