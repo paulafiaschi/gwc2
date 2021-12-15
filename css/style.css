@@ -295,13 +295,22 @@ article.info {
 
 /* styling for how-to page starts here */
 
-.step-wrapper {
+.tabs-wrapper {
     display: flex;
+    justify-content: space-evenly;
 }
 
-.img-container {
-    height: 100%;
-    width: auto;
+.step-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0 2rem 0;
+}
+
+div.img-container {
+    height: 254px;
+    width: 380px;
+    background-size: cover;
+    background-position: center;
 }
 
 #img1 {
@@ -309,7 +318,8 @@ article.info {
 }
 
 #img2 {
-    background-image: url("../assets/img2");
+    background-image: url("../assets/img2.jpg");
+    background-position: bottom;
 }
 
 #img3 {
@@ -326,6 +336,7 @@ article.info {
 
 #img6 {
     background-image: url("../assets/img6.jpg");
+    background-position: bottom;
 }
 
 #img7 {
@@ -334,6 +345,12 @@ article.info {
 
 #img8 {
     background-image: url("../assets/img8.jpg");
+}
+
+.blurb {
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
 }
 
 
