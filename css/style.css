@@ -1,280 +1,332 @@
 :root {
-  --orange: #fe6f2e;
-  --green: #77d970;
-  --lightgreen: #f0fcea;
-  --blue: #00253e;
-  --lightgrey: #f5f5f5;
-  --darkteal: #02232a;
+    --orange: #fe6f2e;
+    --green: #77d970;
+    --lightgreen: #f0fcea;
+    --blue: #00253e;
+    --lightgrey: #f5f5f5;
+    --darkteal: #02232a;
 }
+
 
 /* remember to consolidate all text etc that should be same color */
 
 * {
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 html,
 body {
-  min-height: 100vw;
+    min-height: 100vw;
 }
 
 body {
-  margin: 0;
+    margin: 0;
 }
 
 header {
-  display: flex;
-  justify-content: space-around;
-  /* change this later */
-  background-color: var(--darkteal);
-  padding: 1rem 0 1rem 0;
-  margin: 0;
+    display: flex;
+    justify-content: space-around;
+    /* change this later */
+    background-color: var(--darkteal);
+    padding: 1rem 0 1rem 0;
+    margin: 0;
 }
 
 nav ul {
-  color: #ffffff;
-  display: flex;
-  justify-content: space-around;
-  gap: 1rem;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 h2 {
-  background-color: inherit;
-  margin-top: 0;
+    background-color: inherit;
+    margin-top: 0;
 }
 
 h3 {
-  text-align: center;
-  font-size: 2.5rem;
-  color: var(--darkteal);
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--darkteal);
 }
 
 section {
-  margin-bottom: 4rem;
+    margin-bottom: 4rem;
 }
 
 footer {
-  color: var(--darkteal);
-  background-color: var(--lightgrey);
+    color: var(--darkteal);
+    background-color: var(--lightgrey);
 }
 
 .logo {
-  max-width: 120px;
-  height: auto;
+    max-width: 120px;
+    height: auto;
 }
 
 section.hero {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 .hero {
-  background-color: var(--darkteal);
-  /* get rid of this later */
-  height: 500px;
+    background-color: var(--darkteal);
+    /* get rid of this later */
+    height: 500px;
 }
 
-.hero > h2 {
-  color: white;
-  font-size: 3rem;
+.hero>h2 {
+    color: white;
+    font-size: 3rem;
 }
 
 button.outline {
-  color: white;
-  background-color: transparent;
-  border: solid 2px white;
-  padding: 15px 32px;
+    color: white;
+    background-color: transparent;
+    border: solid 2px white;
+    padding: 15px 32px;
 }
 
 button.solid {
-  border: solid 2px var(--darkteal);
-  color: white;
-  background-color: var(--darkteal);
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+    border: solid 2px var(--darkteal);
+    color: white;
+    background-color: var(--darkteal);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
 
 article.info {
-  color: var(--darkteal);
-  border: solid 2px var(--darkteal);
-  width: 40rem;
-  margin: 0 auto 0 auto;
-  padding: 2rem 6rem 2rem 6rem;
+    color: var(--darkteal);
+    border: solid 2px var(--darkteal);
+    width: 40rem;
+    margin: 0 auto 0 auto;
+    padding: 2rem 6rem 2rem 6rem;
 }
 
-.info > h3 {
-  text-align: center;
-  margin-top: 0;
+.info>h3 {
+    text-align: center;
+    margin-top: 0;
 }
 
-.info > p {
-  color: var(--darkteal);
-  line-height: 2rem;
+.info>p {
+    color: var(--darkteal);
+    line-height: 2rem;
 }
+
 
 /* This .caps is for accesibilty - some screen readers read all caps letter-by-letter */
 
 .caps {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .selection-gallery-wrapper {
-  background-color: var(--darkteal);
-  height: 300px;
+    background-color: var(--darkteal);
+    height: 300px;
 }
 
 .faq-group {
-  display: flex;
-  gap: 1rem;
-  margin: auto 8% auto 8%;
-  padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    margin: auto 8% auto 8%;
+    padding: 2rem;
 }
 
 .faq-block {
-  border: solid 1px var(--darkteal);
-  padding: 0.5rem;
+    border: solid 1px var(--darkteal);
+    padding: 0.5rem;
 }
 
-.faq-block > figure > * {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.faq-block>figure>* {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
-.faq-block > figure {
-  text-align: center;
-  color: var(--darkteal);
+.faq-block>figure {
+    text-align: center;
+    color: var(--darkteal);
 }
 
-.faq-block > figure > img {
-  max-height: 100px;
-  width: auto;
-  color: var(--darkteal);
+.faq-block>figure>img {
+    max-height: 100px;
+    width: auto;
+    color: var(--darkteal);
 }
 
-.footer-logo > a > img {
-  max-width: 150px;
-  height: auto;
-  padding-top: 2rem;
+.footer-logo>a>img {
+    max-width: 150px;
+    height: auto;
+    padding-top: 2rem;
 }
 
 .footer-wrapper {
-  display: flex;
-  justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 }
 
-.SoMe-icons > a > img {
-  max-height: 30px;
-  height: auto;
+.SoMe-icons>a>img {
+    max-height: 30px;
+    height: auto;
 }
+
 
 /* dropdown menu */
+
 .dropbtn {
-  border: none;
-  cursor: pointer;
+    border: none;
+    cursor: pointer;
 }
 
 .dropdown {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 8rem;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 8rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
+    background-color: #f1f1f1;
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+    display: block;
 }
 
+
 /* product list view */
+
 #cat-list {
-  display: grid;
-  column-gap: 2.5rem;
-  row-gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  margin: 0 2.5rem;
+    display: grid;
+    column-gap: 2.5rem;
+    row-gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin: 0 2.5rem;
 }
+
 #cat-list h1 {
-  grid-column: 1/-1;
-  text-align: center;
+    grid-column: 1/-1;
+    text-align: center;
 }
 
 #cat-list img {
-  width: 100%;
+    width: 100%;
 }
 
 #left-filters {
-  grid-row: 3 / span 12;
+    grid-row: 3 / span 12;
 }
 
 .filters a,
 .filters-top li {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .filters-top ul {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .filters-top li {
-  margin: 0 1.5rem;
-  cursor: pointer;
+    margin: 0 1.5rem;
+    cursor: pointer;
 }
 
 .filters-top {
-  grid-column: 1/-1;
-  margin-bottom: 0rem;
+    grid-column: 1/-1;
+    margin-bottom: 0rem;
 }
 
 .brand-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 8rem;
-  z-index: 1;
-  top: 2.5rem;
-  left: 0;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 8rem;
+    z-index: 1;
+    top: 2.5rem;
+    left: 0;
 }
 
 .brand-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
 .block {
-  display: block;
+    display: block;
 }
+
 .none {
-  display: none;
+    display: none;
+}
+
+
+/* styling for how-to page starts here */
+
+.step-wrapper {
+    display: flex;
+}
+
+.img-container {
+    height: 100%;
+    width: auto;
+}
+
+#img1 {
+    background-image: url("../assets/");
+}
+
+#img2 {
+    background-image: url("../assets/");
+}
+
+#img3 {
+    background-image: url("../assets/");
+}
+
+#img4 {
+    background-image: url("../assets/");
+}
+
+#img5 {
+    background-image: url("../assets/");
+}
+
+#img6 {
+    background-image: url("../assets/");
+}
+
+#img7 {
+    background-image: url("../assets/");
+}
+
+#img8 {
+    background-image: url("../assets/");
 }
