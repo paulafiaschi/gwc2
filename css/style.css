@@ -109,7 +109,7 @@ section.hero {
 
 .hero {
     color: #ffffff;
-    background-color: var(--darkteal);
+    /* background-color: var(--darkteal); */
     height: 50vw;
     width: 100vw;
     /* position: fixed; */
@@ -330,7 +330,8 @@ article.info {
 /* styling for how-to page starts here */
 
 #how-to-hero {
-    background-image: url("../assets/jul")
+    background-image: url("../assets/green-fabric.webp");
+    background-size: cover;
 }
 
 .tabs-wrapper {
