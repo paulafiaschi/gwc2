@@ -356,6 +356,7 @@ article.info {
     width: 98%;
     display: flex;
     margin-top: 8rem;
+    margin-bottom: 2rem;
 }
 
 .tabs-wrapper>h3 {
@@ -386,7 +387,7 @@ article.info {
 }
 
 .inactive-steps {
-    display: none;
+    display: none !important;
 }
 
 .lenders-tab,
