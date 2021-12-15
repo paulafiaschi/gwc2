@@ -63,7 +63,7 @@ ul {
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     margin: 6rem auto 8rem auto;
     text-align: center;
 }
@@ -113,11 +113,12 @@ p {
     overflow: hidden;
 }
 
-.hero>h1 {
+#how-to-hero>h1 {
+    font-size: 4.5rem;
     position: relative;
     text-align: left;
-    top: 25vw;
-    left: 4vw;
+    top: 20vw;
+    left: 8vw;
     margin: 0;
 }
 
@@ -133,6 +134,13 @@ button.outline {
     padding: 15px 32px;
 }
 
+button.dark-outline {
+    color: #000000;
+    background-color: transparent;
+    border: solid 2px #000000;
+    padding: 15px 32px;
+}
+
 button.solid {
     border: solid 2px var(--darkteal);
     color: white;
@@ -141,6 +149,10 @@ button.solid {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+}
+
+.centered-button {
+    margin: auto;
 }
 
 article.info {
@@ -336,9 +348,14 @@ article.info {
     background-image: url("../assets/green-fabric.webp");
 }
 
+.limit-width {
+    max-width: 30vw;
+}
+
 .tabs-wrapper {
     width: 98%;
     display: flex;
+    margin-top: 14rem;
 }
 
 .tabs-wrapper>h3 {
@@ -359,6 +376,14 @@ article.info {
 
 .inactive-steps {
     display: none;
+}
+
+.lenders-tab,
+.borrowers-tab {
+    display: flex;
+    flex-direction: column;
+    /* margin-right: 0;
+    padding-left: 0; */
 }
 
 
@@ -390,14 +415,14 @@ article.info {
 .step-wrapper {
     /* width: 100%; */
     display: flex;
-    justify-content: space-around;
-    /* gap: 5rem; */
-    margin: 6rem 5% 12rem 5%;
+    justify-content: space-between;
+    gap: 5rem;
+    margin: 4rem 10% 6rem 10%;
 }
 
 h2.large-number {
     font-family: var(--number-font);
-    font-size: 12rem;
+    font-size: 15vw;
     margin: 0;
 }
 
