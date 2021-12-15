@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "didot";
+    src: url("../assets/fonts/didot-bold.ttf")
+}
+
 :root {
     --orange: #fe6f2e;
     --green: #77d970;
@@ -5,6 +10,7 @@
     --blue: #00253e;
     --lightgrey: #f5f5f5;
     --darkteal: #02232a;
+    --number-font: "didot";
 }
 
 
@@ -305,6 +311,8 @@ article.info {
     justify-content: space-evenly;
     margin: 2rem 0 2rem 0;
 }
+
+.large-number {}
 
 div.img-container {
     height: 254px;
