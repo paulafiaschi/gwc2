@@ -61,6 +61,12 @@ ul {
     list-style: none;
 }
 
+h1 {
+    font-size: 3.5rem;
+    margin: 6rem auto 8rem auto;
+    text-align: center;
+}
+
 h2 {
     background-color: inherit;
     margin-top: 0;
@@ -318,8 +324,32 @@ article.info {
 /* styling for how-to page starts here */
 
 .tabs-wrapper {
+    width: 98%;
     display: flex;
-    justify-content: space-evenly;
+}
+
+.tabs-wrapper>* {
+    /* justify-content: space-evenly; */
+}
+
+.tabs-wrapper>h3 {
+    font-size: 1.8rem;
+    width: 100%;
+    /* margin: 0 auto 0 auto; */
+}
+
+.active-tab {
+    text-decoration: underline;
+}
+
+.inactive-tab {
+    color: var(--lightgrey);
+    background-color: rgba(6, 9, 9, 0.114);
+    border-radius: 10px 10px 0 0;
+}
+
+.inactive-steps {
+    display: none;
 }
 
 .step-wrapper {
