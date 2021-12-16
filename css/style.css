@@ -848,7 +848,8 @@ input {
   font-size: 0.75rem;
 }
 
-.not-reg a {
+.not-reg a,
+h3 a {
   color: var(--green);
 }
 /* mobile list */
