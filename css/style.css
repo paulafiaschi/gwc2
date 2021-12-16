@@ -833,7 +833,7 @@ input {
 
 #log-in-button {
   background-color: var(--lightgrey);
-  padding: 0.5rem 3rem;
+  width: 100%;
   color: var(--darkteal);
   border: none;
   font-size: 1rem;
