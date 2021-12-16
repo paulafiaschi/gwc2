@@ -158,12 +158,12 @@ p {
 .background-color {
     /* background-color: #02232ad7; */
     background-color: #000000db;
-    transition: background-color .8s;
+    transition: background-color ease-in .6s;
 }
 
 .no-background-color {
     background-color: none;
-    transition: background-color .8s;
+    transition: background-color ease-in .5s;
 }
 
 .hero {
