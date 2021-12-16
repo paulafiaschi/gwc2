@@ -192,7 +192,7 @@ p {
 }
 
 .hero-text {
-    margin-top: -10vw;
+    margin-top: -035vw;
 }
 
 .hero-text>p {
@@ -1012,6 +1012,9 @@ h3 a {
 
 #about-hero {
     background-image: url("../assets/woman-with-dress.png");
+    background-size: cover;
+    overflow: hidden;
+    margin-top: -75px;
 }
 
 #about-hero h2,
