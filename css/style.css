@@ -957,4 +957,30 @@ h3 a {
   form {
     padding-left: 0rem;
   }
+
+  /* index */
+
+  #index-hero {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    justify-content: center;
+  }
+
+  .buttons-wrapper {
+    flex-direction: column;
+  }
+  article.info {
+    width: unset;
+    padding: 2rem;
+    margin: 1rem;
+    margin-bottom: 4rem;
+  }
+
+  .faq-group {
+    display: block;
+  }
+
+  .faq-block {
+    margin-bottom: 1rem;
+  }
 }
