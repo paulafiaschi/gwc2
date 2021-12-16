@@ -689,7 +689,10 @@ div.img-container {
 
 #list-hero {
   background-image: url(/assets/green-fabric.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 #list-hero h1 {
   font-size: 4.5rem;
   text-align: left;
@@ -701,17 +704,17 @@ div.img-container {
 .hero-title {
   margin-top: -92px;
   color: #ffffff;
-  height: 100vh;
   overflow: hidden;
 }
 
 .hero-title h2 {
-  width: 50%;
-  padding: 2rem 0 2rem 15rem;
+  max-width: 60ch;
+  padding: 2rem 2rem 2rem 15rem;
 }
 
 form {
   padding-left: 15rem;
+  padding-bottom: 7rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: left;
@@ -738,6 +741,18 @@ input {
   border: none;
   font-size: 1rem;
   cursor: pointer;
+}
+
+#log-in-button:hover {
+  background-color: var(--green);
+}
+
+.not-reg {
+  font-size: 0.75rem;
+}
+
+.not-reg a {
+  color: var(--green);
 }
 /* mobile list */
 
@@ -788,5 +803,13 @@ input {
   }
   .prod-price {
     font-size: 1.5rem;
+  }
+
+  .hero-title > * {
+    padding-left: 2rem !important;
+  }
+
+  form {
+    padding-left: 0rem;
   }
 }
