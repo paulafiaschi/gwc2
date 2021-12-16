@@ -64,6 +64,18 @@ a {
     color: inherit;
 }
 
+li:hover {
+    transform: scale(1.01);
+    text-shadow: 2px 2px 5px var(--darkteal);
+    transition: all .2s;
+}
+
+.dropdown>li:hover {
+    transform: scale(1.01);
+    text-shadow: none;
+    transition: all .2s;
+}
+
 ul {
     list-style: none;
 }
