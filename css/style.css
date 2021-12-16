@@ -523,6 +523,7 @@ blockquote {
 
 #how-to-hero {
   background-image: url("../assets/green-fabric.webp");
+  padding: 20vw;
 }
 
 .limit-width {
