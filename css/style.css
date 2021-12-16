@@ -39,18 +39,24 @@ body {
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     /* change this later */
     /* background-color: var(--darkteal); */
     padding: 1rem 0 1rem 0;
-    margin: 0;
+    margin: 0 2vw 0 2vw;
+}
+
+nav {
+    display: flex;
 }
 
 nav ul {
     color: #ffffff;
     display: flex;
-    justify-content: space-around;
-    gap: 1rem;
+    justify-content: space-evenly;
+    gap: 4vw;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 a {
@@ -104,6 +110,33 @@ p {
 .logo {
     max-width: 120px;
     height: auto;
+}
+
+.nav-icons {
+    border-left: solid 2px #ffffff;
+    display: flex;
+    margin: auto;
+    justify-self: end;
+    padding-left: 2vw;
+    margin-left: 18vw;
+    gap: 2vw;
+}
+
+.search-icon,
+.basket-icon {
+    height: 30px;
+    width: 30px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.search-icon {
+    background-image: url("../assets/search.svg")
+}
+
+.basket-icon {
+    background-image: url("../assets/basket.svg")
 }
 
 .hero {
@@ -344,6 +377,14 @@ article.info {
 
 .none {
     display: none;
+}
+
+
+/* index page-specific styling here */
+
+#index-hero {
+    background-image: url("../assets/video-still.png");
+    margin-top: -112px;
 }
 
 
