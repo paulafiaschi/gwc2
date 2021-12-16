@@ -10,7 +10,8 @@ function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         header.classList.add("background-color");
     } else {
-        top_button.classList.remove("background-color");
+        header.classList.remove("background-color");
+        header.classList.add("no-background-color");
     }
 }
 
