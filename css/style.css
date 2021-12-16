@@ -57,9 +57,11 @@ nav ul {
     width: 80%;
     color: #ffffff;
     display: flex;
-    justify-content: space-around;
-    gap: 2vw;
-    font-size: 1.3vw;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: -6vw;
+    gap: 4vw;
+    font-size: 1.4vw;
     font-weight: 400;
 }
 
@@ -134,8 +136,8 @@ p {
     display: flex;
     margin: auto;
     justify-self: end;
-    padding-left: 2vw;
-    gap: 2vw;
+    padding-left: 4vw;
+    gap: 4vw;
 }
 
 .search-icon,
@@ -158,12 +160,12 @@ p {
 .background-color {
     /* background-color: #02232ad7; */
     background-color: #000000db;
-    transition: background-color ease-in .6s;
+    transition: background-color ease-in .8s;
 }
 
 .no-background-color {
     background-color: none;
-    transition: background-color ease-in .5s;
+    transition: background-color ease-in .6s;
 }
 
 .hero {
