@@ -49,16 +49,23 @@ header {
 }
 
 nav {
+    width: 100%;
     display: flex;
+    justify-content: space-evenly;
+    /* border: solid 1px lime; */
 }
 
 nav ul {
+    /* border: solid 1px lime; */
+    width: 80%;
     color: #ffffff;
     display: flex;
-    justify-content: space-evenly;
-    gap: 4vw;
-    font-size: 1.2rem;
-    font-weight: 500;
+    justify-content: space-around;
+    /* gap: 1vw; */
+    margin: auto;
+    padding-left: 0;
+    font-size: 1.8vw;
+    font-weight: 400;
 }
 
 a {
@@ -131,7 +138,6 @@ p {
     margin: auto;
     justify-self: end;
     padding-left: 2vw;
-    margin-left: 18vw;
     gap: 2vw;
 }
 
