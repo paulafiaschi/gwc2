@@ -38,6 +38,8 @@ body {
 }
 
 header {
+    position: sticky;
+    top: 0px;
     display: flex;
     justify-content: space-between;
     /* change this later */
@@ -66,7 +68,6 @@ a {
 
 li:hover {
     transform: scale(1.01);
-    text-shadow: 2px 2px 5px var(--darkteal);
     transition: all .2s;
 }
 
@@ -175,26 +176,33 @@ p {
     font-size: 3rem;
 }
 
-button.outline {
+.outline,
+.dark-outline,
+.solid {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.outline {
     color: white;
     background-color: transparent;
     border: solid 2px white;
     padding: 15px 32px;
 }
 
-button.dark-outline {
-    font-size: 1.2rem;
-    font-weight: 800;
+.dark-outline {
     color: #000000;
     background-color: transparent;
     border: solid 2px #000000;
     padding: 15px 32px;
 }
 
-button.solid {
-    border: solid 2px var(--darkteal);
+.solid {
+    font-size: 1.2rem;
+    font-weight: 800;
+    border: solid 2px #000000;
     color: white;
-    background-color: var(--darkteal);
+    background-color: #000000;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -263,6 +271,11 @@ article.info {
     color: var(--darkteal);
 }
 
+.footer-wrapper>div>h6 {
+    font-size: 1rem;
+    margin: 0;
+}
+
 .footer-logo>a>img {
     max-width: 150px;
     height: auto;
@@ -274,9 +287,35 @@ article.info {
     justify-content: space-around;
 }
 
+.footer-list {
+    padding: 0;
+    margin: 0;
+    line-height: 1.5rem;
+}
+
+.block-3 {
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    max-width: 100%;
+    padding-top: 0;
+}
+
+div.SoMe-icons {
+    width: 100%;
+}
+
+.SoMe-icons>a {
+    /* display: inline; */
+    margin-right: 1vw;
+}
+
 .SoMe-icons>a>img {
-    max-height: 30px;
-    height: auto;
+    max-width: 3vw;
+    height: 3vw;
+    /* margin-right: .05vw; */
 }
 
 
