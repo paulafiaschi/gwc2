@@ -178,6 +178,21 @@ p {
     overflow: hidden;
 }
 
+.hero-text {
+    margin-top: -10vw;
+}
+
+.hero-text>p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 40ch;
+    font-weight: 200;
+}
+
+.right-side {
+    margin-left: 50vw;
+}
+
 #how-to-hero>h1 {
     font-size: 4.5rem;
     position: relative;
@@ -187,7 +202,7 @@ p {
     margin: 0;
 }
 
-.hero>h2 {
+.hero-text>h2 {
     color: white;
     font-size: 3rem;
 }
@@ -933,4 +948,17 @@ h3 a {
     form {
         padding-left: 0rem;
     }
+}
+
+
+/* styling for About page starts here */
+
+#about-hero {
+    background-image: url("../assets/woman-with-dress.png");
+}
+
+#about-hero h2,
+p {
+    position: relative;
+    top: 30vw;
 }
