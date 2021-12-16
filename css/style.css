@@ -191,7 +191,7 @@ p {
 
 .hero-text>p {
     font-size: 1.5rem;
-    line-height: 2rem;
+    line-height: 2.5rem;
     width: 40ch;
     font-weight: 100;
 }
@@ -253,9 +253,9 @@ p {
 
 article.info {
     color: var(--darkteal);
-    border: solid 2px var(--darkteal);
+    border: solid 1px var(--darkteal);
     width: 50vw;
-    margin: 0 auto 0 auto;
+    margin: 6rem auto 6rem auto;
     padding: 2rem 6rem 2rem 6rem;
     display: flex;
     flex-direction: column;
@@ -263,12 +263,14 @@ article.info {
 
 .info>h3 {
     text-align: center;
-    margin-top: 0;
+    margin: 0;
 }
 
 .info>p {
     /* color: var(--darkteal); */
-    line-height: 2rem;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: 200;
     /* margin-top: -93px; */
 }
 
@@ -971,4 +973,9 @@ h3 a {
 #about-hero p {
     position: relative;
     top: 30vw;
+}
+
+section.about-us {
+    color: #FFFFFF;
+    background-color: var(--darkteal);
 }
