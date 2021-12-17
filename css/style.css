@@ -163,8 +163,8 @@ label {
     
     h1 {
         font-size: 4rem;
-        margin: 6rem auto 8rem auto;
-        text-align: center;
+        /* margin: 6rem auto 8rem auto; */
+        /* text-align: center; */
     }
     
     h2 {
@@ -279,9 +279,8 @@ label {
         font-size: 4.5rem;
         position: relative;
         text-align: left;
-        top: 20vw;
-        left: 8vw;
-        margin: 0;
+        top: 5vw;
+        left: -5vw;
     }
     
     .hero-text>h2 {
@@ -593,13 +592,13 @@ label {
     }
     /* styling for how-to page starts here */
     
-    .hidden {
-        display: none;
-    }
-    
     #how-to-hero {
         background-image: url("../assets/green-fabric.webp");
         padding: 20vw;
+    }
+    
+    .hidden {
+        display: none;
     }
     
     .limit-width {
