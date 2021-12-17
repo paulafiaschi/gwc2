@@ -5,7 +5,6 @@ function start() {
     document.querySelector("#lenders-tab").classList.add("active-tab");
     document.querySelector("#borrowers-tab").classList.add("inactive-tab");
     document.querySelector("#borrowers-info").classList.add("hidden");
-    document.querySelector("#lenders-tab").addEventListener("click", switchTab);
     document.querySelector(".inactive-tab").addEventListener("click", toggleTab);
 }
 
