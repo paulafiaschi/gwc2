@@ -448,6 +448,8 @@ div.SoMe-icons {
 .filters-top {
   grid-column: 1/-1;
   margin-bottom: 0rem;
+  overflow: unset !important;
+  z-index: 100;
 }
 
 .brand-content {
