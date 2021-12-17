@@ -242,7 +242,7 @@ label {
     
     .background-color {
         /* background-color: #02232ad7; */
-        background-color: #000000f0;
+        background-color: #000000d0;
         transition: background-color ease-in 0.8s;
     }
     
@@ -326,6 +326,14 @@ label {
         margin: auto;
         display: block;
         text-align: center;
+        margin-top: -2rem;
+    }
+    
+    .centered-button:hover {
+        color: white;
+        background-color: black;
+        transform: scale(1.02);
+        transition: all .3s ease-in;
     }
     
     article.info {
