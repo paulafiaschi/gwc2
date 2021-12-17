@@ -247,7 +247,7 @@ label {
     }
     
     .color-bg {
-        background-color: #000000f0;
+        background-color: #000000d0;
     }
     
     .hero {
@@ -1052,10 +1052,6 @@ label {
         .filters-top ul {
             margin-left: 0;
             padding-left: 0;
-        }
-        .category-header {
-            margin-bottom: 0;
-            margin-top: 3rem;
         }
         .first-line h2,
         .first-line p {
