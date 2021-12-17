@@ -42,6 +42,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 0 2vw 0 2vw;
+  z-index: 1;
 }
 
 nav {
@@ -180,6 +181,9 @@ p {
   transition: background-color ease-in 0.6s;
 }
 
+.color-bg {
+  background-color: #000000f0;
+}
 .hero {
   margin-top: -92px;
   color: #ffffff;
@@ -209,8 +213,6 @@ p {
   font-size: 4.5rem;
   position: relative;
   text-align: left;
-  top: 20vw;
-  left: 8vw;
   margin: 0;
 }
 
