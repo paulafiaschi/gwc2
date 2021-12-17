@@ -1121,12 +1121,14 @@ h3 a {
 
 #about-hero {
     background-image: url("../assets/woman-with-dress.png");
+    background-size: cover;
+    max-height: 55vw;
 }
 
 #about-hero h2,
 #about-hero p {
     position: relative;
-    top: 30vw;
+    top: 8vw;
 }
 
 section.about-us {
