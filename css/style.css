@@ -121,6 +121,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 0 2vw 0 2vw;
+    z-index: 1;
 }
 
 nav {
@@ -257,6 +258,10 @@ p {
 .no-background-color {
     background-color: none;
     transition: background-color ease-in 0.6s;
+}
+
+.color-bg {
+    background-color: #000000f0;
 }
 
 .hero {
@@ -490,13 +495,9 @@ div.SoMe-icons {
     display: grid;
     column-gap: 2.5rem;
     row-gap: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     margin: 0 2.5rem;
     display: grid;
-    column-gap: 2.5rem;
-    row-gap: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 0.5fr));
-    margin: 0 2.5rem;
 }
 
 #cat-list h1 {
@@ -769,7 +770,7 @@ div.img-container {
 /* end how-to page styling */
 
 .title-h3 {
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: 300;
     text-align: left;
     margin-top: 0;
@@ -778,8 +779,7 @@ div.img-container {
 .first-line {
     display: flex;
     justify-content: space-between;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    align-items: center;
 }
 
 .first-line h2 {
@@ -789,6 +789,7 @@ div.img-container {
 
 .price {
     margin: 0.3rem;
+    font-size: 1.25rem;
 }
 
 .image {
@@ -827,6 +828,7 @@ div.img-container {
 
 .product-view h5 {
     margin-bottom: 0.3rem;
+    font-size: 1.5rem;
 }
 
 .prod-brand {
@@ -837,21 +839,27 @@ div.img-container {
 
 .prod-title {
     margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 .prod-price {
     margin-bottom: 3rem;
+    font-size: 2rem;
+    margin-top: 0;
 }
 
 .sizes {
     display: flex;
     margin-top: 0;
     margin-left: -0.5rem;
+    align-items: center;
 }
 
 .sizes div {
     border: solid 1px var(--darkteal);
     width: 2rem;
+    height: 2rem;
     padding: 0.3rem;
     text-align: center;
     margin: 0 0.5rem;
@@ -860,6 +868,7 @@ div.img-container {
 
 .sizes p {
     margin: 0;
+    font-size: 1rem;
 }
 
 .no-stock {
@@ -873,18 +882,18 @@ div.img-container {
     align-items: center;
     margin-top: 2rem;
     border: solid 0.75px var(--darkteal);
-    width: fit-content;
+    width: 10rem;
     padding: 0.3rem;
     cursor: pointer;
     font-size: 0.75rem;
+    justify-content: space-between;
 }
 
 .pick-up p {
     margin: 0;
-}
-
-.pick-up span {
-    margin-left: 2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
 }
 
 .buttons {
@@ -897,7 +906,7 @@ div.img-container {
     border: solid 2px var(--green);
     font-weight: 700;
     padding: 0.75rem 2rem;
-    width: fit-content;
+    width: 10rem;
     margin: 0 !important;
     font-size: 1rem;
     text-transform: uppercase;
