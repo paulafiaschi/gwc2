@@ -735,6 +735,7 @@ div.img-container {
 
 .product-view h5 {
   margin-bottom: 0.3rem;
+  font-size: 1.5rem;
 }
 
 .prod-brand {
@@ -745,21 +746,27 @@ div.img-container {
 
 .prod-title {
   margin-top: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 .prod-price {
   margin-bottom: 3rem;
+  font-size: 2rem;
+  margin-top: 0;
 }
 
 .sizes {
   display: flex;
   margin-top: 0;
   margin-left: -0.5rem;
+  align-items: center;
 }
 
 .sizes div {
   border: solid 1px var(--darkteal);
   width: 2rem;
+  height: 2rem;
   padding: 0.3rem;
   text-align: center;
   margin: 0 0.5rem;
@@ -768,6 +775,7 @@ div.img-container {
 
 .sizes p {
   margin: 0;
+  font-size: 1rem;
 }
 
 .no-stock {
@@ -781,18 +789,18 @@ div.img-container {
   align-items: center;
   margin-top: 2rem;
   border: solid 0.75px var(--darkteal);
-  width: fit-content;
+  width: 10rem;
   padding: 0.3rem;
   cursor: pointer;
   font-size: 0.75rem;
+  justify-content: space-between;
 }
 
 .pick-up p {
   margin: 0;
-}
-
-.pick-up span {
-  margin-left: 2rem;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
 }
 
 .buttons {
@@ -805,7 +813,7 @@ div.img-container {
   border: solid 2px var(--green);
   font-weight: 700;
   padding: 0.75rem 2rem;
-  width: fit-content;
+  width: 10rem;
   margin: 0 !important;
   font-size: 1rem;
   text-transform: uppercase;
