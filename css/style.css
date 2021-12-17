@@ -112,7 +112,9 @@ label {
 */
     
     header {
-        position: sticky;
+        /* position: sticky; */
+        width: 100%;
+        position: fixed;
         top: 0px;
         display: flex;
         justify-content: space-between;
@@ -237,12 +239,6 @@ label {
     
     .basket-icon {
         background-image: url("../assets/basket.svg");
-    }
-    
-    .sticky {
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
     }
     
     .background-color {
