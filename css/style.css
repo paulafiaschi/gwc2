@@ -408,13 +408,9 @@ div.SoMe-icons {
   display: grid;
   column-gap: 2.5rem;
   row-gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   margin: 0 2.5rem;
   display: grid;
-  column-gap: 2.5rem;
-  row-gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 0.5fr));
-  margin: 0 2.5rem;
 }
 
 #cat-list h1 {
@@ -692,8 +688,6 @@ div.img-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
 }
 
 .first-line h2 {
@@ -703,6 +697,7 @@ div.img-container {
 
 .price {
   margin: 0.3rem;
+  font-size: 1.25rem;
 }
 
 .image {
