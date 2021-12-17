@@ -583,7 +583,7 @@ label {
     /* styling for how-to page starts here */
     
     .hidden {
-        display:
+        display: none;
     }
     
     #how-to-hero {
@@ -620,7 +620,7 @@ label {
     }
     
     .inactive-tab {
-        /* color: var(--lightgrey); */
+        color: var(--lightgrey);
         color: grey;
         background-color: rgba(6, 9, 9, 0.114);
         border-radius: 10px 10px 0 0;
