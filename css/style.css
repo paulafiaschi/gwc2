@@ -959,7 +959,7 @@ label {
         background-image: url(/assets/green-fabric.webp);
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 20rem;
+        padding: 10rem;
         padding-left: 8rem;
         margin-top: -92px;
     }
@@ -1020,6 +1020,11 @@ label {
     .not-reg a,
     h3 a {
         color: var(--green);
+    }
+    
+    .read-more {
+        color: rgb(6, 113, 61);
+        font-size: 110%
     }
     /* mobile list */
     
