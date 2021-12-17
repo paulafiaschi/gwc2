@@ -1115,3 +1115,26 @@ h3 a {
         margin-bottom: 1rem;
     }
 }
+
+
+/* styling for About page starts here */
+
+#about-hero {
+    background-image: url("../assets/woman-with-dress.png");
+}
+
+#about-hero h2,
+#about-hero p {
+    position: relative;
+    top: 30vw;
+}
+
+section.about-us {
+    color: #FFFFFF;
+    background-color: var(--darkteal);
+}
+
+.outline-text {
+    color: var(--darkteal);
+    -webkit-text-stroke: .5px white;
+}
