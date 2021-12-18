@@ -1050,9 +1050,10 @@ label {
         background-size: cover;
     }
     
-    #about-hero h2 {
-        /* position: relative; */
-        margin-top: 5vw;
+    #about-hero h2,
+    #about-hero p {
+        position: relative;
+        top: 8vw;
     }
     
     section.about-us {
