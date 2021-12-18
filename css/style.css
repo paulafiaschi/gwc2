@@ -257,7 +257,7 @@ label {
         z-index: -1;
         background-size: cover;
         overflow: hidden;
-        padding: 20rem 0;
+        padding: 30vw 0;
     }
     
     .hero-text {
@@ -1051,10 +1051,9 @@ label {
         max-height: 55vw;
     }
     
-    #about-hero h2,
-    #about-hero p {
-        position: relative;
-        top: 8vw;
+    #about-hero h2 {
+        /* position: relative; */
+        margin-top: 30%;
     }
     
     section.about-us {
@@ -1210,4 +1209,5 @@ label {
         .faq-block {
             margin-bottom: 1rem;
         }
+        /* about page */
     }
