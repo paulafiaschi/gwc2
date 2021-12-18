@@ -34,7 +34,6 @@ body {
 }
 /* burger menu */
 .burger {
-  border-bottom: 1px solid;
   text-align: right;
   height: 100px;
   width: 300px;
@@ -77,6 +76,11 @@ label {
   align-items: center;
 }
 
+.home {
+  padding-top: 10vw !important;
+  border: none !important;
+}
+
 @media (min-width: 970px) {
   .burger {
     display: none;
@@ -100,8 +104,6 @@ label {
 
   .menu {
     position: relative;
-    top: 10vw;
-
     text-align: left;
     width: 100%;
     display: none;
@@ -111,7 +113,7 @@ label {
   .menu a {
     position: relative;
     display: block;
-    border-bottom: 1px solid;
+    border-top: 1px solid;
     margin: 0;
     background-color: var(--darkteal);
     z-index: 99;
