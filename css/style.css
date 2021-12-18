@@ -1043,80 +1043,6 @@ label {
         color: rgb(6, 113, 61);
         font-size: 110%
     }
-    /* mobile list */
-    
-    @media (max-width: 850px) {
-        .check-box {
-            display: none;
-        }
-        .filters {
-            display: flex;
-            flex-wrap: wrap;
-            margin-left: 0;
-            padding-left: 0;
-        }
-        .filters li {
-            margin: 0.4rem;
-            border: solid 1px black;
-            padding: 0.3rem;
-            border-radius: 0.2rem;
-        }
-        #left-filters {
-            grid-column: 1/-1;
-            grid-row: 2;
-            justify-content: space-evenly;
-        }
-        .active {
-            background-color: var(--orange);
-            color: var(--lightgrey);
-            border: none !important;
-        }
-        .filters-top ul {
-            margin-left: 0;
-            padding-left: 0;
-        }
-        .first-line h2,
-        .first-line p {
-            font-size: 1rem;
-        }
-        .product-view {
-            margin: 1rem;
-            grid-template-columns: 1fr;
-        }
-        .descrip {
-            width: 100%;
-        }
-        .prod-price {
-            font-size: 1.5rem;
-        }
-        .hero-title>* {
-            padding-left: 2rem !important;
-        }
-        form {
-            padding-left: 0rem;
-        }
-        /* index */
-        #index-hero {
-            padding-left: 2rem;
-            padding-right: 2rem;
-            justify-content: center;
-        }
-        .buttons-wrapper {
-            flex-direction: column;
-        }
-        article.info {
-            width: unset;
-            padding: 2rem;
-            margin: 1rem;
-            margin-bottom: 4rem;
-        }
-        .faq-group {
-            display: block;
-        }
-        .faq-block {
-            margin-bottom: 1rem;
-        }
-    }
     /* styling for About page starts here */
     
     #about-hero {
@@ -1210,4 +1136,78 @@ label {
         padding: 14rem 8rem;
         margin-top: 4rem;
         margin-bottom: 4rem;
+    }
+    /* mobile styling */
+    
+    @media (max-width: 850px) {
+        .check-box {
+            display: none;
+        }
+        .filters {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 0;
+            padding-left: 0;
+        }
+        .filters li {
+            margin: 0.4rem;
+            border: solid 1px black;
+            padding: 0.3rem;
+            border-radius: 0.2rem;
+        }
+        #left-filters {
+            grid-column: 1/-1;
+            grid-row: 2;
+            justify-content: space-evenly;
+        }
+        .active {
+            background-color: var(--orange);
+            color: var(--lightgrey);
+            border: none !important;
+        }
+        .filters-top ul {
+            margin-left: 0;
+            padding-left: 0;
+        }
+        .first-line h2,
+        .first-line p {
+            font-size: 1rem;
+        }
+        .product-view {
+            margin: 1rem;
+            grid-template-columns: 1fr;
+        }
+        .descrip {
+            width: 100%;
+        }
+        .prod-price {
+            font-size: 1.5rem;
+        }
+        .hero-title>* {
+            padding-left: 2rem !important;
+        }
+        form {
+            padding-left: 0rem;
+        }
+        /* index */
+        #index-hero {
+            padding-left: 2rem;
+            padding-right: 2rem;
+            justify-content: center;
+        }
+        .buttons-wrapper {
+            flex-direction: column;
+        }
+        article.info {
+            width: unset;
+            padding: 2rem;
+            margin: 1rem;
+            margin-bottom: 4rem;
+        }
+        .faq-group {
+            display: block;
+        }
+        .faq-block {
+            margin-bottom: 1rem;
+        }
     }
