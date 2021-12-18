@@ -257,7 +257,7 @@ label {
         z-index: -1;
         background-size: cover;
         overflow: hidden;
-        padding: 30vw 0;
+        padding: 23vw 0;
     }
     
     .hero-text {
@@ -1048,12 +1048,11 @@ label {
     #about-hero {
         background-image: url("../assets/woman-with-dress.png");
         background-size: cover;
-        max-height: 55vw;
     }
     
     #about-hero h2 {
         /* position: relative; */
-        margin-top: 30%;
+        margin-top: 5vw;
     }
     
     section.about-us {
