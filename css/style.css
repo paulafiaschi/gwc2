@@ -1225,6 +1225,9 @@ label {
                 flex-direction: column;
                 margin: auto 15% auto 15%;
             }
+            .stats-wrapper>article {
+                margin: auto 4vw auto;
+            }
             .stats-wrapper>article>h3 {
                 font-size: 3vw;
             }
@@ -1234,9 +1237,14 @@ label {
             article.info {
                 margin: 14vw 2vw 14vw 2vw;
             }
-            img.about-img {
-                position: absolute;
-                right: 0;
-                display: none;
+            img.about-image {
+                margin-left: 40%;
+            }
+            .stats-wrapper {
+                flex-direction: column;
+                gap: 8vw;
+            }
+            .stats-wrapper>article>h3 {
+                margin: 0;
             }
         }
