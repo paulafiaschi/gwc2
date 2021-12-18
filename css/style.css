@@ -1250,6 +1250,7 @@ label {
         .step-wrapper {
             flex-direction: column;
             align-content: baseline;
+            margin: 4rem 10% 6rem 10%;
         }
         .step-wrapper>h2 {
             text-align: left;
