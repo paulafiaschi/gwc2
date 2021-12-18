@@ -16,7 +16,6 @@
   --number-font: "didot";
   --primary-font: "assistant", "roboto", "arial", "sans-serif";
 }
-
 /* remember to consolidate all text etc that should be same color */
 
 * {
@@ -33,7 +32,6 @@ body {
 body {
   margin: 0;
 }
-
 /* burger menu
  .burger {
     border-bottom: 1px solid;
@@ -114,7 +112,8 @@ label {
 */
 
 header {
-  position: sticky;
+  width: 100%;
+  position: fixed;
   top: 0px;
   display: flex;
   justify-content: space-between;
@@ -164,8 +163,8 @@ ul {
 
 h1 {
   font-size: 4rem;
-  margin: 6rem auto 8rem auto;
-  text-align: center;
+  /* margin: 6rem auto 8rem auto; */
+  /* text-align: center; */
 }
 
 h2 {
@@ -241,25 +240,14 @@ p {
   background-image: url("../assets/basket.svg");
 }
 
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
-
 .background-color {
   /* background-color: #02232ad7; */
-  background-color: #000000f0;
+  background-color: #000000d0;
   transition: background-color ease-in 0.8s;
 }
 
-.no-background-color {
-  background-color: none;
-  transition: background-color ease-in 0.6s;
-}
-
 .color-bg {
-  background-color: #000000f0;
+  background-color: #000000d0;
 }
 
 .hero {
@@ -269,7 +257,7 @@ p {
   z-index: -1;
   background-size: cover;
   overflow: hidden;
-  padding: 20rem 0;
+  padding: 23vw 0;
 }
 
 .hero-text {
@@ -291,9 +279,8 @@ p {
   font-size: 4.5rem;
   position: relative;
   text-align: left;
-  top: 20vw;
-  left: 8vw;
-  margin: 0;
+  top: 5vw;
+  left: -5vw;
 }
 
 .hero-text > h2 {
@@ -336,13 +323,23 @@ p {
 
 .centered-button {
   margin: auto;
+  display: block;
+  text-align: center;
+  margin-top: -2rem;
+}
+
+.centered-button:hover {
+  color: white;
+  background-color: black;
+  transform: scale(1.02);
+  transition: all 0.3s ease-in;
 }
 
 article.info {
   color: var(--darkteal);
   border: solid 1px var(--darkteal);
   width: 50vw;
-  margin: 6rem auto 6rem auto;
+  margin: 10rem auto 10rem auto;
   padding: 2rem 6rem 2rem 6rem;
   display: flex;
   flex-direction: column;
@@ -360,7 +357,6 @@ article.info {
   font-weight: 200;
   /* margin-top: -93px; */
 }
-
 /* This .caps is for accesibilty - some screen readers read all caps letter-by-letter */
 
 .caps {
@@ -447,7 +443,6 @@ div.SoMe-icons {
   height: 3vw;
   /* margin-right: .05vw; */
 }
-
 /* dropdown menu */
 
 .dropbtn {
@@ -483,7 +478,6 @@ div.SoMe-icons {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
 /* product list view */
 
 #cat-list {
@@ -554,19 +548,35 @@ div.SoMe-icons {
 .none {
   display: none;
 }
-
 /* index page-specific styling here */
 
 #index-hero {
-  background-image: url("../assets/video-still.png");
+  /* background-image: url("../assets/video-still.png"); */
   background-size: cover;
   overflow: hidden;
   padding-left: 8rem;
 }
 
+#hero-video {
+  object-fit: cover;
+  object-position: center;
+  /* left bottom - controls how the video's cropped */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+}
+
+#index-hero > h2 {
+  font-size: 4rem;
+  max-width: 9ch;
+}
+
 .buttons-wrapper {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .buttons-wrapper a {
@@ -590,18 +600,22 @@ blockquote {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  margin-top: 6rem;
 }
 
 .brands img {
   height: 3rem;
   width: auto;
 }
-
 /* styling for how-to page starts here */
 
 #how-to-hero {
   background-image: url("../assets/green-fabric.webp");
   padding: 20vw;
+}
+
+.hidden {
+  display: none;
 }
 
 .limit-width {
@@ -633,7 +647,7 @@ blockquote {
 }
 
 .inactive-tab {
-  /* color: var(--lightgrey); */
+  color: var(--lightgrey);
   color: grey;
   background-color: rgba(6, 9, 9, 0.114);
   border-radius: 10px 10px 0 0;
@@ -657,9 +671,13 @@ blockquote {
   /* margin-right: 0;
     padding-left: 0; */
 }
-
+/* #borrowers-info,
+    #lenders-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
 /* this is the styling for overlapping number and pictures - also remove gap in step-wrapper */
-
 /* .step-wrapper {
     display: flex;
     justify-content: space-between;
@@ -686,8 +704,8 @@ blockquote {
   /* width: 100%; */
   display: flex;
   justify-content: space-between;
-  gap: 5rem;
-  margin: 4rem 10% 6rem 10%;
+  gap: 4rem;
+  margin: 4rem 10% 12rem 10%;
 }
 
 h2.large-number {
@@ -756,7 +774,6 @@ div.img-container {
   line-height: 2.4rem;
   font-weight: 300;
 }
-
 /* end how-to page styling */
 
 .title-h3 {
@@ -792,7 +809,6 @@ div.img-container {
   right: 1rem;
   z-index: 3;
 }
-
 /* product page */
 
 .breadcrumbs {
@@ -954,14 +970,13 @@ div.img-container {
   justify-content: center;
   flex-wrap: wrap;
 }
-
 /* log in page */
 
 #list-hero {
   background-image: url(/assets/green-fabric.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 20rem;
+  padding: 10rem;
   padding-left: 8rem;
   margin-top: -92px;
 }
@@ -1024,7 +1039,107 @@ h3 a {
   color: var(--green);
 }
 
-/* mobile list */
+.read-more {
+  color: rgb(6, 113, 61);
+  font-size: 110%;
+}
+/* styling for About page starts here */
+
+#about-hero {
+  background-image: url("../assets/woman-with-dress.png");
+  background-size: cover;
+}
+
+#about-hero h2,
+#about-hero p {
+  position: relative;
+  top: 8vw;
+}
+
+section.about-us {
+  color: #ffffff;
+  /* background-color: var(--darkteal); */
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 4rem;
+  position: relative;
+}
+
+.about-bg {
+  width: 100%;
+  height: 42rem;
+  background-color: var(--darkteal);
+  position: absolute;
+  z-index: -1;
+  top: -4rem;
+}
+
+.about-us > article > h2 {
+  font-size: 2.5rem;
+}
+
+.about-us > article > p {
+  font-size: 1.2rem;
+  max-width: 70ch;
+  line-height: calc(1.2rem * 1.5);
+  /* line-height: 2.4rem; */
+  /* max-width: 90%; */
+}
+
+.about-us > img {
+  /* margin: auto; */
+  padding-top: 2rem;
+}
+
+.outline-text {
+  color: var(--darkteal);
+  -webkit-text-stroke: 0.5px white;
+}
+
+.why-shoulds > h3 {
+  margin: 6rem;
+}
+
+.one-two-three {
+  display: flex;
+  justify-content: space-around;
+  margin: 4rem;
+  gap: 4rem;
+}
+
+.one-two-three > article > h3 {
+  margin-top: 0;
+}
+
+.one-two-three > article > p {
+  margin-top: 0;
+  font-size: 1.2rem;
+  line-height: calc(1.2rem * 1.5);
+}
+
+.number {
+  font-family: var(--number-font);
+  font-size: 8rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+section.stats {
+  background-image: url("../assets/water-resized.webp");
+  background-size: cover;
+  padding: 14rem 8rem;
+}
+
+.stats-wrapper {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+/* mobile styling */
 
 @media (max-width: 850px) {
   .check-box {
@@ -1055,10 +1170,6 @@ h3 a {
   .filters-top ul {
     margin-left: 0;
     padding-left: 0;
-  }
-  .category-header {
-    margin-bottom: 0;
-    margin-top: 3rem;
   }
   .first-line h2,
   .first-line p {
@@ -1100,5 +1211,60 @@ h3 a {
   }
   .faq-block {
     margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 1225px) {
+  article.info {
+    margin: 14vw 2vw 14vw 2vw;
+  }
+  /* about page */
+  .about-bg {
+    width: 100%;
+    height: 90%;
+    background-color: var(--darkteal);
+  }
+  .one-two-three {
+    flex-direction: column;
+    margin: auto 15% auto 15%;
+  }
+  .stats-wrapper > article {
+    margin: auto 4vw auto;
+  }
+  .stats-wrapper > article > h3 {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  /* about-page */
+  img.about-image {
+    margin-left: 40%;
+  }
+  .stats-wrapper {
+    flex-direction: column;
+    align-content: center;
+    gap: 8vw;
+  }
+  /* how-to page */
+  .step-wrapper {
+    flex-direction: column;
+    align-content: baseline;
+    margin: 4rem 10% 6rem 10%;
+  }
+  .step-wrapper > h2 {
+    text-align: left;
+    margin-left: 10%;
+    margin-bottom: 0;
+  }
+  .step-wrapper > .img-container {
+    max-width: 10vw;
+    min-height: 50%;
+    position: absolute;
+    left: 0;
+  }
+  .step-wrapper > article {
+    max-width: 100%;
+    padding-left: 10%;
   }
 }
