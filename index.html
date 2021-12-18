@@ -13,26 +13,28 @@
 </head>
 
 <body>
-    <!-- this is the borrowed code for the burger menu
-<header>
+    <!-- this is the borrowed code for the burger menu -->
+    <header>
         <div class="burger">
             <label for="toggle">&#9776;</label>
             <input type="checkbox" id="toggle">
             <div class="menu">
                 <a href="index.html">Home</a>
-                <a href="projects.html">Projects</a>
-                <a href="about.html">About</a>
+                <a href="projects.html">Browse Clothes</a>
+
+                <a href="product_list.html?Category=Dresses" class="sub-item"> Dresses</a>
+                <a href="product_list.html?Category=Skirts" class="sub-item"> Skirts</a>
+                <a href="product_list.html?Category=Jackets" class="sub-item"> Jackets</a>
+                <a href="product_list.html?Category=Accessories" class="sub-item"> Accessories</a>
+                <a href="log_in.html">List clothes</a>
+                <a href="about.html">About Green Wardrobe Club</a>
+                <a href="how_to.html">How it works</a>
+
             </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header> -->
-    <header id="header">
+
+    </header>
+    <header id="header" class="none">
         <div>
             <!-- this is the logo on the left side -->
             <a href="index.html"><img class="logo" src="./assets/logo.png" alt="Green Wardrobe Club"></a>
@@ -65,9 +67,9 @@
     <main>
         <section class="hero" id="index-hero">
             <video id="hero-video" poster="poster.webp" autoplay muted loop>
-  <source src="assets/GWC_landingpage desktop view .webm" type="video/webm" />
-  <source src="assets/GWC_landingpage desktop view.mp4" type="video/mp4" />
-</video>
+                <source src="assets/GWC_landingpage desktop view .webm" type="video/webm" />
+                <source src="assets/GWC_landingpage desktop view.mp4" type="video/mp4" />
+            </video>
             <h2 class="caps">Exclusive styles</h2>
 
             <div class="buttons-wrapper">
@@ -77,7 +79,8 @@
         </section>
         <article class="info">
             <h3>What is Green Wardrobe Club?</h3>
-            <p>We believe that a circular wardrobe is the future and that all styles that are intended for use 1-5 times should be rented. After all, it's better for your wallet and for our planet.</p>
+            <p>We believe that a circular wardrobe is the future and that all styles that are intended for use 1-5 times
+                should be rented. After all, it's better for your wallet and for our planet.</p>
         </article>
         <h3>Explore the selection</h3>
         <section id="also-like">
@@ -165,8 +168,10 @@
                 </ul>
                 <p class="caps">Social</p>
                 <div class="SoMe-icons">
-                    <a href="https://www.instagram.com/green_wardrobe_club"><img src="./assets/SVG/insta_iconteal.svg" alt="instagram"></a>
-                    <a href="https://www.facebook.com/Green-Wardrobe-Club-125682786349267"><img src="./assets/SVG/fb_iconteal.svg" alt="facebook"></a>
+                    <a href="https://www.instagram.com/green_wardrobe_club"><img src="./assets/SVG/insta_iconteal.svg"
+                            alt="instagram"></a>
+                    <a href="https://www.facebook.com/Green-Wardrobe-Club-125682786349267"><img
+                            src="./assets/SVG/fb_iconteal.svg" alt="facebook"></a>
                     <a href="#"><img src="./assets/SVG/tiktok_iconteal.svg" alt="TikTok"></a>
                 </div>
             </div>

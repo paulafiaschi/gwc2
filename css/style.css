@@ -32,84 +32,96 @@ body {
 body {
   margin: 0;
 }
-/* burger menu
- .burger {
-    border-bottom: 1px solid;
-    text-align: right;
-    height: 70px;
-    line-height: 70px;
-    background-color: white;
-    z-index: 99;
+/* burger menu */
+.burger {
+  border-bottom: 1px solid;
+  text-align: right;
+  height: 100px;
+  width: 300px;
+  line-height: 70px;
+  z-index: 99;
 }
 
 .menu {
-    margin: 0 30px 0 0;
+  margin: 0 30px 0 0;
+  color: white !important;
+  width: 300px !important;
 }
 
 .menu a {
-    text-decoration: none;
-    margin: 0 10px;
-    line-height: 70px;
-    clear: right
+  text-decoration: none;
+  margin: 0 10px;
+  line-height: 70px;
+  clear: right;
 }
 
 label {
-    margin: 3vw 2vw 0 0;
-    font-size: 8vw;
-    line-height: 3vw;
-    display: none;
-    width: 26px;
-    position: absolute;
-    right: 2vw;
+  margin: 3vw 2vw 0 0;
+  font-size: 8vw;
+  line-height: 3vw;
+  display: none;
+  width: 26px;
+  position: absolute;
+  color: white;
+  padding-left: 2rem;
 }
 
 #toggle {
-    display: none;
+  display: none;
+}
+.sub-item {
+  height: 50px;
+  border: none !important;
+  background-color: #093958 !important;
+  display: flex !important;
+  align-items: center;
+}
 
 @media (min-width: 970px) {
-
-    .burger {
-        display: none;
-    }
+  .burger {
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {
+  .burger {
+    display: block;
+    margin-left: -2vw;
+  }
 
-   .burger {
-        display: block;
-    }
+  ul {
+    display: none;
+  }
 
-   ul {
-        display: none;
-    }
+  label {
+    display: block;
+    cursor: pointer;
+  }
 
-    label {
-        display: block;
-        cursor: pointer;
-    }
+  .menu {
+    position: relative;
+    top: 10vw;
 
-    .menu {
-        position: relative;
-        top: 10vw;
-        text-align: center;
-        width: 100%;
-        display: none;
-        z-index: 99;
-    }
+    text-align: left;
+    width: 100%;
+    display: none;
+    z-index: 99;
+  }
 
-    .menu a {
-        position: relative;
-        display: block;
-        border-bottom: 1px solid;
-        margin: 0;
-        background-color: white;
-        z-index: 99;
-    }
+  .menu a {
+    position: relative;
+    display: block;
+    border-bottom: 1px solid;
+    margin: 0;
+    background-color: var(--darkteal);
+    z-index: 99;
+    padding-left: 1rem;
+  }
 
-    #toggle:checked + .menu {
-        display: block;
-    }
-*/
+  #toggle:checked + .menu {
+    display: block;
+  }
+}
 
 header {
   width: 100%;
@@ -572,6 +584,7 @@ div.SoMe-icons {
 #index-hero > h2 {
   font-size: 4rem;
   max-width: 9ch;
+  padding-top: 8rem;
 }
 
 .buttons-wrapper {
