@@ -13,8 +13,8 @@
 </head>
 
 <body>
-    <!-- this is the borrowed code for the burger menu -->
-    <header>
+
+    <!-- <header>
         <div class="burger">
             <label for="toggle">&#9776;</label>
             <input type="checkbox" id="toggle">
@@ -35,13 +35,13 @@
 
         <div id="header">
             <div>
-                <!-- this is the logo on the left side -->
+            
                 <a href="index.html"><img class="logo" src="./assets/logo.png" alt="Green Wardrobe Club"></a>
             </div>
             <nav>
                 <ul>
                     <div class="dropdown">
-                        <!-- this is the dropdown menu with the categories -->
+                
                         <li class="dropbtn"> Browse clothes
                             <div class="dropdown-content">
                                 <a href="product_list.html?Category=Dresses"> Dresses</a>
@@ -54,7 +54,7 @@
                     <li><a href="log_in.html">List clothes</a> </li>
                     <li><a href="about.html">About Green Wardrobe Club</a> </li>
                     <li><a href="how_to.html">How it works</a> </li>
-                    <!-- these three are the rest of the items in the menu -->
+                 
                 </ul>
 
             </nav>
@@ -63,7 +63,59 @@
                 <div class="basket-icon"></div>
             </div>
         </div>
+    </header> -->
+
+
+    <header id="top">
+
+        <nav>
+            <div>
+
+                <a href="index.html"><img class="logo" src="./assets/logo.png" alt="Green Wardrobe Club"></a>
+            </div>
+            <ul>
+                <div class="dropdown">
+
+                    <a href="product_list.html?Category=Dresses" class="sub-item"> Dresses</a>
+                    <a href="product_list.html?Category=Skirts" class="sub-item"> Skirts</a>
+                    <a href="product_list.html?Category=Jackets" class="sub-item"> Jackets</a>
+                    <a href="product_list.html?Category=Accessories" class="sub-item"> Accessories</a>
+                </div>
+                <li><a href="log_in.html">List clothes</a> </li>
+                <li><a href="about.html">About Green Wardrobe Club</a> </li>
+                <li><a href="how_to.html">How it works</a> </li>
+
+            </ul>
+            <div class="nav-icons">
+                <div class="search-icon"></div>
+                <div class="basket-icon"></div>
+            </div>
+        </nav>
+
+
+        <div class="burger-icon"></div>
+
+        <ul class="mob-menu">
+            <li class="cross-icon"></li>
+            <li><a href="index.html">Home</a></li>
+            <li> Browse clothes</li>
+            <li class="sub-item"><a href="product_list.html?Category=Dresses"> Dresses</a></li>
+            <li class="sub-item"> <a href="product_list.html?Category=Skirts"> Skirts</a></li>
+            <li class="sub-item"> <a href="product_list.html?Category=Jackets"> Jackets</a></li>
+            <li class="sub-item"> <a href="product_list.html?Category=Accessories"> Accessories</a></li>
+
+            <li><a href="log_in.html">List clothes</a> </li>
+            <li><a href="about.html">About Green Wardrobe Club</a> </li>
+            <li><a href="how_to.html">How it works</a> </li>
+        </ul>
+
+
+
     </header>
+
+
+
+
     <main>
         <section class="hero" id="index-hero">
             <video id="hero-video" poster="poster.webp" autoplay muted loop>
@@ -163,7 +215,7 @@
                 </a>
             </div>
             <div class="block-3 caps">
-                <ul class="footer-list mob-none">
+                <ul class="footer-list">
                     <li class="bold-caps"><a href="how_to.html">How it works</a></li>
                     <li class="bold-caps"><a href="about.html"> About us</a></li>
                     <li class="bold-caps"><a href="#"> FAQ</a></li>
