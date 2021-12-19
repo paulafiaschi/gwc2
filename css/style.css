@@ -1455,4 +1455,8 @@ section.stats {
     margin-left: auto;
     margin-right: auto;
   }
+
+  #list-hero {
+    padding-left: 2rem;
+  }
 }
