@@ -1441,6 +1441,8 @@ section.stats {
   }
 
   .SoMe-icons > a > img {
-    height: 6rem;
+    height: 6vw !important;
+    max-width: 6vw !important;
+    margin: 0 0.5rem;
   }
 }
