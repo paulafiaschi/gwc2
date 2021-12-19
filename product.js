@@ -2,6 +2,8 @@ const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 console.log(id);
 
+window.addEventListener("load", allowMenu);
+
 // This is the end point filtered by category / The sintax is defined by restdb
 const url = `https://cocktails-240e.restdb.io/rest/gw-club?q={"_id" : {"$in" : ["${id}"]}}`;
 console.log(url);
@@ -64,4 +66,24 @@ function showItem(item) {
   // append it to main
   const elemParent = document.querySelector("main");
   elemParent.appendChild(copy);
+}
+
+function allowMenu() {
+  document.querySelector(".burger-icon").addEventListener("click", openMenu);
+  document.querySelector(".cross-icon").addEventListener("click", closeMenu);
+}
+
+function openMenu() {
+  console.log("open menu");
+  document.querySelector(".mob-menu").classList.remove("close");
+  document.querySelector(".mob-menu").classList.add("show");
+  document.querySelector(".burger-icon").removeEventListener("click", openMenu);
+  document.querySelector(".cross-icon").addEventListener("click", closeMenu);
+}
+function closeMenu() {
+  console.log("close menu");
+  document.querySelector(".mob-menu").classList.remove("show");
+  document.querySelector(".mob-menu").classList.add("close");
+  document.querySelector(".cross-icon").removeEventListener("click", closeMenu);
+  document.querySelector(".burger-icon").addEventListener("click", openMenu);
 }
