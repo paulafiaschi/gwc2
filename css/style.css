@@ -87,6 +87,11 @@ body {
   padding-top: 10vw !important;
   border: none !important;
 }
+.burger-black .home {
+  margin-top: 10vw !important;
+  padding-top: 0 !important;
+  border: none !important;
+}
 
 header {
   width: 100%;
@@ -995,7 +1000,7 @@ form {
 }
 
 label {
-  display: block;
+  display: block !important;
   font-weight: 600;
   margin-bottom: 0.35rem;
 }
