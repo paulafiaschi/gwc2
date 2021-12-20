@@ -174,7 +174,7 @@ ul {
 }
 
 .burger-icon {
-    background-image: url(/assets/burger.svg);
+    background-image: url(./assets/burger.svg);
     width: 5vw;
     height: 5vw;
     background-repeat: no-repeat;
@@ -184,7 +184,7 @@ ul {
 }
 
 .cross-icon {
-    background-image: url(/assets/crossWhite.svg);
+    background-image: url(./assets/crossWhite.svg);
     width: 4vw;
     height: 4vw;
     background-repeat: no-repeat;
