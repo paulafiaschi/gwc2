@@ -1,11 +1,13 @@
 @font-face {
     font-family: "didot";
     src: url("../assets/fonts/didot-bold.ttf");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "assistant";
     src: url("../assets/fonts/Assistant-VariableFont_wght.ttf");
+    font-display: swap;
 }
 
 :root {
