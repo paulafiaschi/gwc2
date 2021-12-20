@@ -1292,6 +1292,16 @@ section.stats {
     .faq-block {
         margin-bottom: 1rem;
     }
+    .buttons-wrapper {
+        align-items: center;
+    }
+    #index-hero>h2 {
+        font-size: 3.5rem;
+        max-width: 9ch;
+        padding-top: 8rem;
+        text-align: center;
+        margin: 0 auto 3rem auto;
+    }
 }
 
 @media screen and (max-width: 1225px) {
