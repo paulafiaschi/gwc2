@@ -1,11 +1,13 @@
 @font-face {
   font-family: "didot";
   src: url("../assets/fonts/didot-bold.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "assistant";
   src: url("../assets/fonts/Assistant-VariableFont_wght.ttf");
+  font-display: swap;
 }
 
 :root {
@@ -16,6 +18,7 @@
   --number-font: "didot";
   --primary-font: "assistant", "roboto", "arial", "sans-serif";
 }
+
 /* remember to consolidate all text etc that should be same color */
 
 * {
@@ -32,7 +35,9 @@ body {
 body {
   margin: 0;
 }
+
 /* burger menu */
+
 .burger {
   text-align: right;
   height: 100px;
@@ -75,6 +80,7 @@ body {
 #toggle {
   display: none;
 }
+
 .sub-item {
   height: 50px;
   border-bottom: solid 1px #053e4b;
@@ -88,6 +94,7 @@ body {
   padding-top: 10vw !important;
   border: none !important;
 }
+
 .burger-black .home {
   margin-top: 10vw !important;
   padding-top: 0 !important;
@@ -119,11 +126,9 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  /* border: solid 1px lime; */
 }
 
 nav ul {
-  /* border: solid 1px lime; */
   width: 80%;
   color: #ffffff;
   display: flex;
@@ -140,14 +145,8 @@ a {
   color: inherit;
 }
 
-li:hover {
+nav > ul > li:hover {
   transform: scale(1.01);
-  transition: all 0.2s;
-}
-
-.dropdown > li:hover {
-  transform: scale(1.01);
-  text-shadow: none;
   transition: all 0.2s;
 }
 
@@ -156,6 +155,7 @@ ul {
 }
 
 /* my burger menu */
+
 .mob-menu {
   flex-direction: column;
   width: fit-content;
@@ -163,6 +163,7 @@ ul {
   display: none;
   color: white;
 }
+
 .mob-menu ul {
   flex-direction: column;
   background: none;
@@ -170,7 +171,7 @@ ul {
 }
 
 .burger-icon {
-  background-image: url(/assets/burger.svg);
+  background-image: url("../assets/burger.svg");
   width: 5vw;
   height: 5vw;
   background-repeat: no-repeat;
@@ -178,8 +179,9 @@ ul {
   margin-top: 2vw;
   display: none;
 }
+
 .cross-icon {
-  background-image: url(/assets/crossWhite.svg);
+  background-image: url("../assets/crossWhite.svg");
   width: 4vw;
   height: 4vw;
   background-repeat: no-repeat;
@@ -189,7 +191,7 @@ ul {
 }
 
 .white-burger {
-  background-image: url(/assets/burgerWhite.svg) !important;
+  background-image: url("../assets/burgerWhite.svg") !important;
   z-index: -1;
 }
 
@@ -197,12 +199,14 @@ ul {
   transform: translateX(100vw);
   transition: all 0.1s ease;
 }
+
 .close {
   transform: translateX(-50vw);
   transition: all 0.1s ease;
 }
 
 /* my burger menu ends */
+
 h1 {
   font-size: 4rem;
   /* margin: 6rem auto 8rem auto; */
@@ -399,6 +403,7 @@ article.info {
   font-weight: 200;
   /* margin-top: -93px; */
 }
+
 /* This .caps is for accesibilty - some screen readers read all caps letter-by-letter */
 
 .caps {
@@ -485,6 +490,7 @@ div.SoMe-icons {
   height: 3vw;
   /* margin-right: .05vw; */
 }
+
 /* dropdown menu */
 
 .dropbtn {
@@ -520,6 +526,7 @@ div.SoMe-icons {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 /* product list view */
 
 #cat-list {
@@ -592,6 +599,7 @@ div.SoMe-icons {
 .none {
   display: none;
 }
+
 /* index page-specific styling here */
 
 #index-hero {
@@ -652,6 +660,7 @@ blockquote {
   height: 3rem;
   width: auto;
 }
+
 /* styling for how-to page starts here */
 
 #how-to-hero {
@@ -716,13 +725,16 @@ blockquote {
   /* margin-right: 0;
     padding-left: 0; */
 }
+
 /* #borrowers-info,
     #lenders-info {
         display: flex;
         flex-direction: column;
         align-items: center;
     } */
+
 /* this is the styling for overlapping number and pictures - also remove gap in step-wrapper */
+
 /* .step-wrapper {
     display: flex;
     justify-content: space-between;
@@ -819,6 +831,7 @@ div.img-container {
   line-height: 2.4rem;
   font-weight: 300;
 }
+
 /* end how-to page styling */
 
 .title-h3 {
@@ -854,6 +867,7 @@ div.img-container {
   right: 1rem;
   z-index: 0;
 }
+
 /* product page */
 
 .breadcrumbs {
@@ -1016,6 +1030,7 @@ div.img-container {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 /* log in page */
 
 #list-hero {
@@ -1089,6 +1104,7 @@ h3 a {
   color: rgb(6, 113, 61);
   font-size: 110%;
 }
+
 /* styling for About page starts here */
 
 #about-hero {
@@ -1185,6 +1201,7 @@ section.stats {
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
+
 /* mobile styling */
 
 @media (max-width: 850px) {
@@ -1258,6 +1275,16 @@ section.stats {
   .faq-block {
     margin-bottom: 1rem;
   }
+  .buttons-wrapper {
+    align-items: center;
+  }
+  #index-hero > h2 {
+    font-size: 3.5rem;
+    max-width: 9ch;
+    padding-top: 8rem;
+    text-align: center;
+    margin: 0 auto 3rem auto;
+  }
 }
 
 @media screen and (max-width: 1225px) {
@@ -1322,30 +1349,24 @@ section.stats {
   .mob-menu {
     width: 100vw !important;
   }
-
   .burger {
     display: block !important;
     margin-left: -2vw;
   }
-
   .burger-black {
     display: block !important;
     margin-left: -2vw;
   }
-
   #header {
     display: none;
   }
-
   ul {
     display: none;
   }
-
   label {
     display: block;
     cursor: pointer;
   }
-
   .menu {
     position: relative;
     text-align: left;
@@ -1356,7 +1377,6 @@ section.stats {
   .burger-black .menu {
     z-index: 99;
   }
-
   .menu a {
     position: relative;
     display: block;
@@ -1366,13 +1386,13 @@ section.stats {
     z-index: 99;
     padding-left: 1rem;
   }
-
   #toggle:checked + .menu {
     display: block;
   }
 }
 
 /* my burger menu */
+
 @media only screen and (max-width: 1025px) {
   .desk-menu {
     display: none;
@@ -1380,7 +1400,6 @@ section.stats {
   nav {
     display: none;
   }
-
   .mob-menu {
     display: flex;
     position: absolute;
@@ -1397,16 +1416,13 @@ section.stats {
     padding-left: 0;
     padding-right: 0;
   }
-
   .mob-menu:first-child {
     padding: 2vw 0;
   }
-
   .mob-menu li {
     padding: 1rem;
     padding-left: 3rem;
   }
-
   #menu-icon {
     display: block;
     z-index: 8;
@@ -1414,7 +1430,6 @@ section.stats {
     top: 2vw;
     left: 1vw;
   }
-
   .burger-icon,
   .cross-icon {
     display: block;
@@ -1422,43 +1437,35 @@ section.stats {
     width: 8vw;
     height: 8vw;
   }
-
   .cross-icon {
     margin-left: 2rem;
     width: 2rem;
     height: 2rem;
   }
-
   .cross-icon:hover,
   .burger-icon {
     background-color: #f7e59e00;
     border-radius: 0;
   }
-
   article.info {
     margin-top: 100vw;
   }
-
   .footer-logo > a > img {
     padding-top: 0;
   }
-
   .SoMe-icons > a > img {
     height: 6vw !important;
     max-width: 6vw !important;
     margin: 0 0.5rem;
   }
-
   #cat-list {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
-
   .product-view img {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
   }
-
   #list-hero {
     padding-left: 2rem;
   }

@@ -1,7 +1,7 @@
 window.addEventListener("load", start);
 
 function start() {
-    console.log("start tab thingy");
+    console.log("start tabs");
     document.querySelector("#lenders-tab").classList.add("active-tab");
     document.querySelector("#borrowers-tab").classList.add("inactive-tab");
     document.querySelector("#borrowers-info").classList.add("hidden");
