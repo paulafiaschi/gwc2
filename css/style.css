@@ -1019,7 +1019,7 @@ div.img-container {
 /* log in page */
 
 #list-hero {
-  background-image: url(/assets/green-fabric.webp);
+  background-image: url("../assets/green-fabric.webp");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10rem;
