@@ -565,6 +565,7 @@ div.SoMe-icons {
 .filters-top {
   grid-column: 1/-1;
   margin-bottom: 0rem;
+  overflow: unset;
 }
 
 .brand-content {
@@ -851,7 +852,7 @@ div.img-container {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  z-index: 3;
+  z-index: 0;
 }
 /* product page */
 
@@ -951,16 +952,17 @@ div.img-container {
 }
 
 .add-bag {
-  color: var(--green);
-  border: solid 2px var(--green);
+  background-color: rgb(6, 113, 61);
   font-weight: 700;
-  padding: 0.75rem 2rem;
   width: 10rem;
   margin: 0 !important;
   font-size: 1rem;
   text-transform: uppercase;
   cursor: pointer;
-  background-color: unset;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .fav {
