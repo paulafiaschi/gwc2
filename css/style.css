@@ -126,11 +126,9 @@ nav {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    /* border: solid 1px lime; */
 }
 
 nav ul {
-    /* border: solid 1px lime; */
     width: 80%;
     color: #ffffff;
     display: flex;
@@ -151,13 +149,6 @@ nav>ul>li:hover {
     transform: scale(1.01);
     transition: all 0.2s;
 }
-
-
-/* .dropdown>li:hover {
-    transform: scale(1.01);
-    text-shadow: none;
-    transition: all 0.2s;
-} */
 
 ul {
     list-style: none;
