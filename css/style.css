@@ -1225,7 +1225,7 @@ section.stats {
 
 @media screen and (max-width: 1225px) {
     article.info {
-        margin: 14vw 2vw 14vw 2vw;
+        margin: 14vw auto 14vw auto;
     }
     /* about page */
     .about-bg {
@@ -1306,7 +1306,7 @@ section.stats {
         border-radius: 0;
     }
     article.info {
-        margin-top: 40vw;
+        /* margin-top: 50vw; */
     }
     .footer-logo>a>img {
         padding-top: 0;
@@ -1389,10 +1389,15 @@ section.stats {
     .buttons-wrapper {
         flex-direction: column;
     }
+    .hero {
+        margin-bottom: 40vw;
+    }
     article.info {
         width: unset;
         padding: 2rem;
-        margin: 1rem;
+        margin-top: 50vw;
+        margin-left: 5%;
+        margin-right: 5%;
         margin-bottom: 4rem;
     }
     .faq-group {
