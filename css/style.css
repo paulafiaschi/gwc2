@@ -1223,6 +1223,113 @@ section.stats {
 
 /* mobile styling */
 
+@media screen and (max-width: 1225px) {
+    article.info {
+        margin: 14vw 2vw 14vw 2vw;
+    }
+    /* about page */
+    .about-bg {
+        width: 100%;
+        height: 90%;
+        background-color: var(--darkteal);
+    }
+    .one-two-three {
+        flex-direction: column;
+        margin: auto 15% auto 15%;
+    }
+    .stats-wrapper>article {
+        margin: auto 4vw auto;
+    }
+    .stats-wrapper>article>h3 {
+        font-size: 3vw;
+    }
+}
+
+
+/* my burger menu */
+
+@media only screen and (max-width: 1025px) {
+    .desk-menu {
+        display: none;
+    }
+    #header {
+        display: none !important;
+    }
+    nav {
+        display: none;
+    }
+    .mob-menu {
+        display: flex;
+        position: absolute;
+        left: -100vw;
+        top: 0;
+        z-index: 5;
+        background-color: var(--darkteal);
+        padding-top: 3vw;
+        position: absolute;
+        width: 50vw;
+        margin-top: -1vw;
+        font-size: 1.5rem;
+        padding-bottom: 6vw;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .mob-menu:first-child {
+        padding: 2vw 0;
+    }
+    .mob-menu li {
+        padding: 1rem;
+        padding-left: 3rem;
+    }
+    #menu-icon {
+        display: block;
+        z-index: 8;
+        position: absolute;
+        top: 2vw;
+        left: 1vw;
+    }
+    .burger-icon,
+    .cross-icon {
+        display: block;
+        margin-bottom: 2vw;
+        width: 8vw;
+        height: 8vw;
+    }
+    .cross-icon {
+        margin-left: 2rem;
+        width: 2rem;
+        height: 2rem;
+    }
+    .cross-icon:hover,
+    .burger-icon {
+        background-color: #f7e59e00;
+        border-radius: 0;
+    }
+    article.info {
+        margin-top: 40vw;
+    }
+    .footer-logo>a>img {
+        padding-top: 0;
+    }
+    .SoMe-icons>a>img {
+        height: 6vw !important;
+        max-width: 6vw !important;
+        margin: 0 0.5rem;
+    }
+    #cat-list {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    .product-view img {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #list-hero {
+        padding-left: 4rem;
+        padding-top: 13rem;
+    }
+}
+
 @media (max-width: 850px) {
     .check-box {
         display: none;
@@ -1285,7 +1392,7 @@ section.stats {
     article.info {
         width: unset;
         padding: 2rem;
-        margin: 1rem auto 4rem auto;
+        margin: 1rem;
         margin-bottom: 4rem;
     }
     .faq-group {
@@ -1304,31 +1411,6 @@ section.stats {
         text-align: center;
         margin: 0 auto 3rem auto;
     }
-}
-
-@media screen and (max-width: 1225px) {
-    article.info {
-        margin: 14vw auto 14vw auto;
-    }
-    /* about page */
-    .about-bg {
-        width: 100%;
-        height: 90%;
-        background-color: var(--darkteal);
-    }
-    .one-two-three {
-        flex-direction: column;
-        margin: auto 15% auto 15%;
-    }
-    .stats-wrapper>article {
-        margin: auto 4vw auto;
-    }
-    .stats-wrapper>article>h3 {
-        font-size: 3vw;
-    }
-}
-
-@media screen and (max-width: 700px) {
     /* about-page */
     img.about-image {
         margin-left: 40%;
@@ -1407,86 +1489,5 @@ section.stats {
     }
     #toggle:checked+.menu {
         display: block;
-    }
-}
-
-
-/* my burger menu */
-
-@media only screen and (max-width: 1025px) {
-    .desk-menu {
-        display: none;
-    }
-    nav {
-        display: none;
-    }
-    .mob-menu {
-        display: flex;
-        position: absolute;
-        left: -100vw;
-        top: 0;
-        z-index: 5;
-        background-color: var(--darkteal);
-        padding-top: 3vw;
-        position: absolute;
-        width: 50vw;
-        margin-top: -1vw;
-        font-size: 1.5rem;
-        padding-bottom: 6vw;
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .mob-menu:first-child {
-        padding: 2vw 0;
-    }
-    .mob-menu li {
-        padding: 1rem;
-        padding-left: 3rem;
-    }
-    #menu-icon {
-        display: block;
-        z-index: 8;
-        position: absolute;
-        top: 2vw;
-        left: 1vw;
-    }
-    .burger-icon,
-    .cross-icon {
-        display: block;
-        margin-bottom: 2vw;
-        width: 8vw;
-        height: 8vw;
-    }
-    .cross-icon {
-        margin-left: 2rem;
-        width: 2rem;
-        height: 2rem;
-    }
-    .cross-icon:hover,
-    .burger-icon {
-        background-color: #f7e59e00;
-        border-radius: 0;
-    }
-    article.info {
-        margin-top: 40vw;
-    }
-    .footer-logo>a>img {
-        padding-top: 0;
-    }
-    .SoMe-icons>a>img {
-        height: 6vw !important;
-        max-width: 6vw !important;
-        margin: 0 0.5rem;
-    }
-    #cat-list {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    }
-    .product-view img {
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #list-hero {
-        padding-left: 2rem;
     }
 }
