@@ -183,6 +183,16 @@ ul {
     display: none;
 }
 
+.white-burger {
+    background-image: url("../assets/burgerWhite.svg") !important;
+    z-index: -1;
+    /* background-blend-mode: screen; */
+    /* border: solid 1px blue; */
+    background-blend-mode: difference;
+    filter: drop-shadow(1px 1px .05rem grey);
+    /* display: none; */
+}
+
 .cross-icon {
     background-image: url("../assets/crossWhite.svg");
     width: 4vw;
@@ -191,11 +201,6 @@ ul {
     /* margin-left: 1vw; */
     display: none;
     z-index: 99;
-}
-
-.white-burger {
-    background-image: url("../assets/burgerWhite.svg") !important;
-    z-index: -1;
 }
 
 .show {
