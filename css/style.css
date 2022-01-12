@@ -109,7 +109,7 @@ header {
     top: 0px;
     display: flex;
     justify-content: space-between;
-    padding: 20px 2vw 0 2vw;
+    padding: 15px 2vw 5px 2vw;
     z-index: 1;
 }
 
@@ -120,7 +120,7 @@ header {
     left: 0;
     display: flex;
     justify-content: space-between;
-    padding: 20px 5vw 0 2vw;
+    padding: 15px 5vw 5px 2vw;
     z-index: 1;
 }
 
