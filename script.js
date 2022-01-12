@@ -13,6 +13,7 @@ function scrollFunction() {
     }
 }
 
+// connecting to database, making page dynamic
 const urlParams = new URLSearchParams(window.location.search);
 const category = urlParams.get("Category");
 console.log(category);
