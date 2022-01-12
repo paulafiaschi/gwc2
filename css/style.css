@@ -175,8 +175,8 @@ ul {
 
 .burger-icon {
     background-image: url("../assets/burger.svg");
-    width: 5vw;
-    height: 5vw;
+    max-width: 50px;
+    max-height: 40px;
     background-repeat: no-repeat;
     margin-left: 1vw;
     margin-top: 2vw;
@@ -1292,8 +1292,8 @@ section.stats {
     .cross-icon {
         display: block;
         margin-bottom: 2vw;
-        width: 8vw;
-        height: 8vw;
+        width: 50px;
+        height: 40px;
     }
     .cross-icon {
         margin-left: 2rem;
@@ -1304,9 +1304,6 @@ section.stats {
     .burger-icon {
         background-color: #f7e59e00;
         border-radius: 0;
-    }
-    article.info {
-        /* margin-top: 50vw; */
     }
     .footer-logo>a>img {
         padding-top: 0;
@@ -1376,6 +1373,14 @@ section.stats {
     }
     .hero-title>* {
         padding-left: 2rem !important;
+    }
+    .hero-text,
+    .right-side {
+        margin: auto;
+    }
+    .limit-width {
+        min-width: 80%;
+        margin: 2vw auto 2vw auto;
     }
     form {
         padding-left: 0rem;
