@@ -116,7 +116,7 @@ header {
 #header {
     width: 100%;
     position: fixed;
-    top: 0px;
+    top: 20px;
     left: 0;
     display: flex;
     justify-content: space-between;
