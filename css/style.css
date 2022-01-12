@@ -693,8 +693,7 @@ blockquote {
 .tabs-wrapper {
     width: 98%;
     display: flex;
-    margin-top: 8rem;
-    margin-bottom: 2rem;
+    margin: 8rem auto 2rem auto;
 }
 
 .tabs-wrapper>h3 {
