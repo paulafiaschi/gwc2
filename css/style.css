@@ -109,18 +109,18 @@ header {
     top: 0px;
     display: flex;
     justify-content: space-between;
-    padding: 0 2vw 0 2vw;
+    padding: 20px 2vw 0 2vw;
     z-index: 1;
 }
 
 #header {
     width: 100%;
     position: fixed;
-    top: 20px;
+    top: 0px;
     left: 0;
     display: flex;
     justify-content: space-between;
-    padding: 0 5vw 0 2vw;
+    padding: 20px 5vw 0 2vw;
     z-index: 1;
 }
 
@@ -1381,6 +1381,9 @@ section.stats {
     .limit-width {
         min-width: 80%;
         margin: 2vw auto 2vw auto;
+    }
+    #list-hero {
+        padding-left: 2vw;
     }
     form {
         padding-left: 0rem;
