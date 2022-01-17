@@ -58,6 +58,7 @@ function showItem(item) {
   copy.querySelector(".prod-brand").textContent = item.Brand;
   copy.querySelector(".prod-title").textContent = item.Title;
   copy.querySelector(".prod-price").textContent = "DKK " + item.Price;
+  copy.querySelector("h6").textContent = "Image from: " + item.copyright;
   copy.querySelector("img").setAttribute("src", item.Image);
   copy.querySelector("img").setAttribute("alt", item.Title + "picture");
   copy.querySelector(".description").innerHTML = item.Description;
