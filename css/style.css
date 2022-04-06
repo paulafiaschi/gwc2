@@ -244,7 +244,6 @@ section {
 footer {
   color: var(--darkteal);
   background-color: var(--lightgrey);
-  margin-top: 12rem;
   padding-top: 4rem;
   padding-bottom: 2rem;
 }
@@ -536,11 +535,12 @@ div.SoMe-icons {
 
 #cat-list {
   display: grid;
-  column-gap: 2.5rem;
+  column-gap: 1.5rem;
   row-gap: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  margin: 0 2.5rem;
+  padding: 0 2.5rem;
   display: grid;
+  background-color: #f9f9f9;
 }
 
 #cat-list h1 {
@@ -552,6 +552,13 @@ div.SoMe-icons {
 
 #cat-list img {
   width: 100%;
+}
+
+.item {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 6.4px 14.4px 0 rgba(152, 152, 152, 0.13), 0 1.2px 3.6px 0 rgba(168, 168, 168, 0.11);
 }
 
 #left-filters {
